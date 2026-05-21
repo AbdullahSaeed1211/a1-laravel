@@ -20,7 +20,7 @@ class GhlBlogService
 
     public function all(): array
     {
-        return Cache::remember('ghl_blog_posts', 3600, function () {
+        return Cache::remember('ghl_blog_posts', 300, function () {
             $response = Http::timeout(30)->get($this->rssUrl);
 
             if (! $response->successful()) {
