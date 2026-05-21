@@ -69,35 +69,27 @@
                     <h2 class="text-3xl font-heading font-black uppercase mb-2 relative z-10">{{ t('send_a_message') }}</h2>
                     <p class="text-gray-400 mb-8 relative z-10">{{ t('fill_out_the_form_below_and_well_get_back_to_you_shortly') }}</p>
 
-                    <form method="POST" action="{{ route(app()->getLocale() === 'es' ? 'es.contact.submit' : 'contact.submit') }}" class="space-y-4 relative z-10" x-data="{ loading: false }" @submit="loading = true">
-                        @csrf
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <div class="space-y-1">
-                                <label class="text-xs font-bold uppercase text-accent tracking-widest">{{ t('contact.form.name') }}</label>
-                                <input required type="text" name="name" class="w-full bg-white/10 border border-white/10 rounded-xl px-4 py-3 text-white focus:border-accent focus:bg-white/20 outline-none transition-all placeholder:text-gray-500" placeholder="{{ t('john_doe') }}">
-                            </div>
-                            <div class="space-y-1">
-                                <label class="text-xs font-bold uppercase text-accent tracking-widest">{{ t('phone') }}</label>
-                                <input type="tel" name="phone" class="w-full bg-white/10 border border-white/10 rounded-xl px-4 py-3 text-white focus:border-accent focus:bg-white/20 outline-none transition-all placeholder:text-gray-500" placeholder="(555) 123-4567">
-                            </div>
-                        </div>
-                        <div class="space-y-1">
-                            <label class="text-xs font-bold uppercase text-accent tracking-widest">{{ t('contact.form.email') }}</label>
-                            <input required type="email" name="email" class="w-full bg-white/10 border border-white/10 rounded-xl px-4 py-3 text-white focus:border-accent focus:bg-white/20 outline-none transition-all placeholder:text-gray-500" placeholder="john@example.com">
-                        </div>
-                        <div class="space-y-1">
-                            <label class="text-xs font-bold uppercase text-accent tracking-widest">{{ t('contact.form.message') }}</label>
-                            <textarea required rows="4" name="message" class="w-full bg-white/10 border border-white/10 rounded-xl px-4 py-3 text-white focus:border-accent focus:bg-white/20 outline-none transition-all placeholder:text-gray-500" placeholder="{{ t('im_interested_in') }}"></textarea>
-                        </div>
-                        <button type="submit" :disabled="loading"
-                                class="w-full font-heading text-xl font-black py-4 rounded-xl transition-all flex items-center justify-center gap-2 mt-4 shadow-lg bg-accent text-asphaltBlack hover:bg-white hover:scale-[1.02] disabled:opacity-50">
-                            <span x-show="!loading">{{ t('send_message') }} <svg class="w-5 h-5 inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg></span>
-                            <span x-show="loading" class="flex items-center gap-2"><svg class="animate-spin w-5 h-5" viewBox="0 0 24 24" fill="none"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"/><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"/></svg> {{ t('sending') }}</span>
-                        </button>
-                        @if(session('success'))
-                        <p class="text-accent text-sm text-center font-bold">{{ session('success') }}</p>
-                        @endif
-                    </form>
+                    <div class="relative z-10">
+                        <iframe
+                            src="https://links.mirchmedia.com/widget/form/2W6NCi9v18GuRLSC6jOJ"
+                            style="width:100%;height:100%;min-height:806px;border:none;border-radius:4px"
+                            id="inline-2W6NCi9v18GuRLSC6jOJ"
+                            data-layout="{'id':'INLINE'}"
+                            data-trigger-type="alwaysShow"
+                            data-trigger-value=""
+                            data-activation-type="alwaysActivated"
+                            data-activation-value=""
+                            data-deactivation-type="neverDeactivate"
+                            data-deactivation-value=""
+                            data-form-name="Form 0"
+                            data-height="806"
+                            data-layout-iframe-id="inline-2W6NCi9v18GuRLSC6jOJ"
+                            data-form-id="2W6NCi9v18GuRLSC6jOJ"
+                            title="Form 0"
+                        >
+                        </iframe>
+                        <script src="https://links.mirchmedia.com/js/form_embed.js"></script>
+                    </div>
                 </div>
             </div>
         </div>

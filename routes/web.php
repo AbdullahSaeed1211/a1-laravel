@@ -85,6 +85,10 @@ Route::redirect('/coach-jamie', '/trainers/jamie', 301);
 Route::redirect('/coach-phillip', '/trainers/phillip', 301);
 Route::redirect('/coach-abby', '/trainers/abby', 301);
 
+// ─── /en redirects for SEO (301 → root) ───
+Route::redirect('/en', '/', 301);
+Route::get('/en/{any}', fn ($any) => redirect('/'.$any, 301))->where('any', '.*');
+
 // ─── Health check (no middleware) ───
 Route::get('/health', function () {
     $locale = app()->getLocale();
