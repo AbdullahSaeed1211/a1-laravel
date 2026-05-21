@@ -2,8 +2,9 @@
     $isEs = app()->getLocale() === 'es';
     $localePrefix = $isEs ? '/es' : '';
 @endphp
-<nav class="fixed top-0 left-0 right-0 z-50 bg-asphaltBlack/90 backdrop-blur-md border-b border-white/5 transition-all duration-300" x-data="{ mobileOpen: false, servicesOpen: false, scrolled: false }"
-     @scroll.window="scrolled = window.scrollY > 50">
+<nav class="fixed top-0 left-0 right-0 z-50 bg-asphaltBlack/90 backdrop-blur-md border-b border-white/5 transition-all duration-300" x-data="{ mobileOpen: false, mobileServicesOpen: false, servicesOpen: false, scrolled: false }"
+     @scroll.window="scrolled = window.scrollY > 50"
+     @keydown.escape.window="mobileOpen = false">
     <div class="max-w-7xl mx-auto px-4 md:px-6">
         <div class="flex items-center justify-between h-16 md:h-20">
             <a href="{{ $localePrefix ?: '/' }}" class="flex items-center gap-2 shrink-0">
@@ -55,23 +56,51 @@
         </div>
     </div>
 
-    <div x-show="mobileOpen" x-cloak class="lg:hidden bg-asphaltBlack/95 backdrop-blur-lg border-t border-white/5 fixed inset-0 top-16 z-50 overflow-y-auto">
+    <div x-show="mobileOpen"
+         x-cloak
+         x-transition:enter="transition ease-out duration-200"
+         x-transition:enter-start="opacity-0 -translate-y-2"
+         x-transition:enter-end="opacity-100 translate-y-0"
+         x-transition:leave="transition ease-in duration-150"
+         x-transition:leave-start="opacity-100 translate-y-0"
+         x-transition:leave-end="opacity-0 -translate-y-2"
+         @click.self="mobileOpen = false"
+         class="lg:hidden bg-asphaltBlack/95 backdrop-blur-lg border-t border-white/5 fixed inset-0 top-16 z-50 overflow-y-auto">
         <div class="px-4 py-6 space-y-4">
             <div class="space-y-2">
-                <p class="text-white/30 text-[10px] font-bold uppercase tracking-widest px-4">{{ t('nav.services') }}</p>
-                @php $mobileSvcs = load_content('services.json'); @endphp
-                @foreach($mobileSvcs ?? [] as $ms)
-                <a href="{{ $localePrefix }}/services/{{ $ms['slug'] }}" class="block px-4 py-2 text-white/70 hover:text-accent text-sm font-bold uppercase tracking-widest">{{ $isEs && !empty($ms['titleEs']) ? $ms['titleEs'] : $ms['title'] }}</a>
-                @endforeach
+                <button @click="mobileServicesOpen = !mobileServicesOpen"
+                        class="w-full flex items-center justify-between px-4 py-2 text-white/70 hover:text-accent text-sm font-bold uppercase tracking-widest transition-colors"
+                        :aria-expanded="mobileServicesOpen">
+                    <span>{{ t('nav.services') }}</span>
+                    <svg :class="{ 'rotate-180': mobileServicesOpen }"
+                         class="w-4 h-4 transition-transform duration-200"
+                         fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </button>
+                <div x-show="mobileServicesOpen"
+                     x-transition:enter="transition ease-out duration-200"
+                     x-transition:enter-start="opacity-0 -translate-y-1"
+                     x-transition:enter-end="opacity-100 translate-y-0"
+                     x-transition:leave="transition ease-in duration-150"
+                     x-transition:leave-start="opacity-100 translate-y-0"
+                     x-transition:leave-end="opacity-0 -translate-y-1"
+                     class="space-y-1 pl-4 border-l border-white/10 ml-4">
+                    @php $mobileSvcs = load_content('services.json'); @endphp
+                    @foreach($mobileSvcs ?? [] as $ms)
+                    <a href="{{ $localePrefix }}/services/{{ $ms['slug'] }}"
+                       class="block px-4 py-2 text-white/50 hover:text-accent text-xs font-bold uppercase tracking-widest transition-colors">{{ $isEs && !empty($ms['titleEs']) ? $ms['titleEs'] : $ms['title'] }}</a>
+                    @endforeach
+                </div>
             </div>
             <div class="border-t border-white/5 pt-4">
-                <a href="{{ $localePrefix }}/trainers" class="block px-4 py-2 text-white/70 hover:text-accent text-sm font-bold uppercase tracking-widest">{{ t('nav.trainers') }}</a>
-                <a href="{{ $localePrefix }}/blog" class="block px-4 py-2 text-white/70 hover:text-accent text-sm font-bold uppercase tracking-widest">{{ t('nav.blog') }}</a>
-                <a href="{{ $localePrefix }}/about" class="block px-4 py-2 text-white/70 hover:text-accent text-sm font-bold uppercase tracking-widest">{{ t('nav.about') }}</a>
-                <a href="{{ $localePrefix }}/a1-black-member" class="block px-4 py-2 text-white/70 hover:text-accent text-sm font-bold uppercase tracking-widest">{{ t('nav.a1black') }}</a>
-                <a href="{{ $localePrefix }}/refer-friends" class="block px-4 py-2 text-white/70 hover:text-accent text-sm font-bold uppercase tracking-widest">{{ t('nav.refer') }}</a>
-                <a href="{{ $localePrefix }}/reviews" class="block px-4 py-2 text-white/70 hover:text-accent text-sm font-bold uppercase tracking-widest">{{ t('nav.reviews') }}</a>
-                <a href="{{ $localePrefix }}/contact" class="block px-4 py-2 text-white/70 hover:text-accent text-sm font-bold uppercase tracking-widest">{{ t('nav.contact') }}</a>
+                <a href="{{ $localePrefix }}/trainers" class="block px-4 py-2 text-white/70 hover:text-accent text-sm font-bold uppercase tracking-widest transition-colors">{{ t('nav.trainers') }}</a>
+                <a href="{{ $localePrefix }}/blog" class="block px-4 py-2 text-white/70 hover:text-accent text-sm font-bold uppercase tracking-widest transition-colors">{{ t('nav.blog') }}</a>
+                <a href="{{ $localePrefix }}/about" class="block px-4 py-2 text-white/70 hover:text-accent text-sm font-bold uppercase tracking-widest transition-colors">{{ t('nav.about') }}</a>
+                <a href="{{ $localePrefix }}/a1-black-member" class="block px-4 py-2 text-white/70 hover:text-accent text-sm font-bold uppercase tracking-widest transition-colors">{{ t('nav.a1black') }}</a>
+                <a href="{{ $localePrefix }}/refer-friends" class="block px-4 py-2 text-white/70 hover:text-accent text-sm font-bold uppercase tracking-widest transition-colors">{{ t('nav.refer') }}</a>
+                <a href="{{ $localePrefix }}/reviews" class="block px-4 py-2 text-white/70 hover:text-accent text-sm font-bold uppercase tracking-widest transition-colors">{{ t('nav.reviews') }}</a>
+                <a href="{{ $localePrefix }}/contact" class="block px-4 py-2 text-white/70 hover:text-accent text-sm font-bold uppercase tracking-widest transition-colors">{{ t('nav.contact') }}</a>
             </div>
             <div class="pt-4 border-t border-white/5 space-y-3">
                 <a href="{{ $isEs ? '/' : '/es' }}" class="block bg-white/5 border border-white/10 px-4 py-3 rounded-full text-white/70 text-xs font-bold uppercase tracking-widest text-center">{{ t('nav.language') }}</a>
