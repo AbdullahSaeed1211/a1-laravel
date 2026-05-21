@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Public;
 use App\Http\Controllers\Controller;
 use App\Providers\SeoPageRegistry;
 use App\Repositories\BlogRepository;
+use App\Services\GhlBlogService;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Route;
@@ -168,6 +169,11 @@ class SitemapController extends Controller
 
     private function getBlogs(): array
     {
+        $ghl = app(GhlBlogService::class);
+        if ($ghl->isConfigured()) {
+            return $ghl->all();
+        }
+
         try {
             $blogs = BlogRepository::all();
             if (! empty($blogs)) {
