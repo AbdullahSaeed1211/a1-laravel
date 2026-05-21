@@ -15,7 +15,7 @@
                 </div>
                 <h3 class="text-black font-heading text-2xl font-black uppercase mb-2">{{ t('call') }}</h3>
                 <p class="text-black/60 text-sm">{{ t('speak_with_our_team') }}</p>
-                <a href="tel:+18888722504" class="inline-block mt-4 bg-black text-white px-6 py-3 rounded-full font-bold text-xs uppercase tracking-widest hover:scale-105 transition-transform">(888) 872-2504</a>
+                <a href="tel:+19177326520" class="inline-block mt-4 bg-black text-white px-6 py-3 rounded-full font-bold text-xs uppercase tracking-widest hover:scale-105 transition-transform">(917) 732-6520</a>
             </div>
             <div class="bg-white border border-gray-200 p-8 md:p-12 rounded-[30px] text-center shadow-sm group hover:-translate-y-2 hover:border-accent/40 hover:shadow-lg transition-all duration-500">
                 <div class="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">

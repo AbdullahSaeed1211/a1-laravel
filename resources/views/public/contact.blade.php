@@ -23,7 +23,7 @@
                     </div>
                     <h3 class="font-heading text-2xl font-black text-asphaltBlack uppercase mb-2">{{ t('call_us') }}</h3>
                     <p class="text-gray-500 mb-4 text-sm font-medium">Mon-Sat 6AM - 9PM</p>
-                    <a href="tel:8888722504" class="text-2xl font-black text-accent hover:text-asphaltBlack transition-colors">(888) 872-2504</a>
+                    <a href="tel:+19177326520" class="text-2xl font-black text-accent hover:text-asphaltBlack transition-colors">(917) 732-6520</a>
                 </div>
 
                 <div class="bg-white p-8 rounded-2xl shadow-xl border border-gray-100 flex flex-col items-center text-center hover:-translate-y-1 transition-transform duration-300">

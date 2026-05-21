@@ -41,7 +41,7 @@
                     <h4 class="text-white font-bold text-xs uppercase tracking-widest mb-6">{{ t('footer.contact_info') }}</h4>
                     <ul class="space-y-3">
                         <li class="text-white/40 text-sm">Manhattan, New York</li>
-                        <li><a href="tel:+18888722504" class="text-white/40 hover:text-accent text-sm transition-colors">(888) 872-2504</a></li>
+                        <li><a href="tel:+19177326520" class="text-white/40 hover:text-accent text-sm transition-colors">(917) 732-6520</a></li>
                         <li><a href="mailto:info@a1traininggroupllc.com" class="text-white/40 hover:text-accent text-sm transition-colors">info@a1traininggroupllc.com</a></li>
                     </ul>
                 </div>

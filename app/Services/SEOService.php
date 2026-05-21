@@ -134,7 +134,7 @@ class SEOService
             'name' => 'A1 Training Group',
             'alternateName' => 'A1 Training Group LLC',
             'url' => self::CANONICAL_DOMAIN,
-            'telephone' => '(888) 872-2504',
+            'telephone' => '(917) 732-6520',
             'email' => 'info@a1traininggroupllc.com',
             'logo' => self::buildUrl('/images/logo.avif'),
             'image' => $image,
@@ -161,7 +161,7 @@ class SEOService
             'name' => 'A1 Training Group',
             'image' => $image,
             'url' => self::CANONICAL_DOMAIN,
-            'telephone' => '(888) 872-2504',
+            'telephone' => '(917) 732-6520',
             'priceRange' => '$$$',
             'openingHoursSpecification' => [
                 ['@type' => 'OpeningHoursSpecification', 'dayOfWeek' => ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'], 'opens' => '06:00', 'closes' => '21:00'],
