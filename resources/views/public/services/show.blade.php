@@ -99,7 +99,7 @@
                     <p class="text-white/30 text-sm">{{ t('pricing_coming_soon') }}</p>
                     @endif
 
-                    <a href="{{ $p }}/services/consultations" class="block w-full bg-accent text-black text-center py-4 rounded-xl font-heading font-black text-lg uppercase hover:bg-accent-light transition-all">{{ t('book_now') }}</a>
+                    <a href="{{ $p }}/contact" class="block w-full bg-accent text-black text-center py-4 rounded-xl font-heading font-black text-lg uppercase hover:bg-accent-light transition-all">{{ t('book_now') }}</a>
 
                     <div class="pt-2 border-t border-white/5 space-y-2">
                         <div class="flex items-center gap-2 text-white/30 text-xs font-bold uppercase tracking-widest">

@@ -43,7 +43,7 @@
                 <div class="absolute top-0 right-0 w-80 h-80 bg-accent/5 rounded-full blur-3xl translate-x-1/2 -translate-y-1/2"></div>
                 <div class="relative z-10">
                     <h2 class="text-3xl md:text-5xl font-heading font-black uppercase mb-4">{{ t('ready_to_be_next') }}</h2>
-                    <a href="{{ $p }}/services/consultations" class="inline-flex items-center gap-3 bg-accent text-asphaltBlack px-8 py-4 rounded-xl font-heading font-black text-xl uppercase hover:bg-yellow-400 transition-all shadow-[0_0_30px_rgba(253,208,82,0.3)] border-b-4 border-asphaltBlack/20">
+                    <a href="{{ $p }}/contact" class="inline-flex items-center gap-3 bg-accent text-asphaltBlack px-8 py-4 rounded-xl font-heading font-black text-xl uppercase hover:bg-yellow-400 transition-all shadow-[0_0_30px_rgba(253,208,82,0.3)] border-b-4 border-asphaltBlack/20">
                         {{ t('book_free_consult') }}
                         <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                     </a>

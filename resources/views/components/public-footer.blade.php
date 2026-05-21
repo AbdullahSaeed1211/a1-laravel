@@ -3,7 +3,7 @@
     <div class="bg-accent py-12 md:py-16 px-4">
         <div class="max-w-7xl mx-auto text-center">
             <h2 class="text-black font-heading text-4xl md:text-5xl uppercase tracking-tighter leading-none mb-6">{{ t('footer.tagline') }}</h2>
-            <a href="{{ $p }}/services/consultations" class="inline-block bg-black text-white px-8 md:px-12 py-4 md:py-5 rounded-full font-heading text-lg md:text-xl uppercase tracking-widest hover:scale-105 transition-transform">
+            <a href="{{ $p }}/contact" class="inline-block bg-black text-white px-8 md:px-12 py-4 md:py-5 rounded-full font-heading text-lg md:text-xl uppercase tracking-widest hover:scale-105 transition-transform">
                 {{ t('footer.cta') }}
             </a>
         </div>

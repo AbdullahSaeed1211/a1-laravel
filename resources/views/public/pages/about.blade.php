@@ -66,7 +66,7 @@
                 <div class="relative z-10">
                     <div class="flex items-center justify-center gap-1 mb-4">@for($s=0; $s<5; $s++)<svg class="w-5 h-5 fill-accent text-accent" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>@endfor</div>
                     <h2 class="text-3xl md:text-5xl font-heading font-black uppercase mb-4">{{ t('ready_to_start') }}</h2>
-                    <a href="{{ $p }}/services/consultations" class="inline-block bg-accent text-asphaltBlack px-8 py-4 rounded-xl font-heading font-black text-xl uppercase hover:bg-yellow-400 transition-all shadow-[0_0_30px_rgba(253,208,82,0.3)] border-b-4 border-asphaltBlack/20">
+                    <a href="{{ $p }}/contact" class="inline-block bg-accent text-asphaltBlack px-8 py-4 rounded-xl font-heading font-black text-xl uppercase hover:bg-yellow-400 transition-all shadow-[0_0_30px_rgba(253,208,82,0.3)] border-b-4 border-asphaltBlack/20">
                         {{ t('book_free_consult') }}
                     </a>
                 </div>

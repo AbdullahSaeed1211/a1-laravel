@@ -36,7 +36,7 @@
         </div>
 
         <div class="text-center mt-12">
-            <a href="{{ $p }}/services/consultations" class="inline-block bg-accent text-black px-10 py-4 rounded-full font-heading font-bold text-lg uppercase tracking-widest hover:scale-105 transition-transform">
+            <a href="{{ $p }}/contact" class="inline-block bg-accent text-black px-10 py-4 rounded-full font-heading font-bold text-lg uppercase tracking-widest hover:scale-105 transition-transform">
                 {{ t('book_now') }}
             </a>
         </div>

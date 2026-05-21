@@ -65,13 +65,13 @@
                     <div class="space-y-4">
                         <h3 class="text-white font-black uppercase tracking-widest text-[10px] mb-6 opacity-30">{{ t('booking_options') }}</h3>
                         <div class="grid grid-cols-1 gap-4">
-                            <a href="{{ $p }}/services/consultations" class="group flex items-center justify-between p-6 rounded-3xl border border-white/10 bg-white/5 hover:border-accent hover:bg-accent/10 transition-all">
+                            <a href="{{ $p }}/contact" class="group flex items-center justify-between p-6 rounded-3xl border border-white/10 bg-white/5 hover:border-accent hover:bg-accent/10 transition-all">
                                 <span class="font-black uppercase tracking-tighter text-xl text-white group-hover:text-accent">{{ t('lets_train_at_the_studio') }}</span>
                                 <span class="w-12 h-12 rounded-full bg-accent flex items-center justify-center text-black group-hover:translate-x-2 transition-transform">
                                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                                 </span>
                             </a>
-                            <a href="{{ $p }}/services/consultations" class="group flex items-center justify-between p-6 rounded-3xl border border-white/10 bg-white/5 hover:border-accent hover:bg-accent/10 transition-all">
+                            <a href="{{ $p }}/contact" class="group flex items-center justify-between p-6 rounded-3xl border border-white/10 bg-white/5 hover:border-accent hover:bg-accent/10 transition-all">
                                 <span class="font-black uppercase tracking-tighter text-xl text-white group-hover:text-accent">{{ t('bring_the_workout_to_me') }}</span>
                                 <span class="w-12 h-12 rounded-full bg-accent flex items-center justify-center text-black group-hover:translate-x-2 transition-transform">
                                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
@@ -92,7 +92,7 @@
                     <p class="text-black/60 font-bold uppercase tracking-widest text-xs mb-12">
                         {{ t('train_with_trainername_today') }}
                     </p>
-                    <a href="{{ $p }}/services/consultations" class="btn-accent px-12 py-6 rounded-full font-heading text-2xl tracking-wide shadow-2xl inline-block">
+                    <a href="{{ $p }}/contact" class="btn-accent px-12 py-6 rounded-full font-heading text-2xl tracking-wide shadow-2xl inline-block">
                         {{ t('get_your_first_session') }}
                     </a>
                 </div>

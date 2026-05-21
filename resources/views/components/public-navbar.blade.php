@@ -43,7 +43,7 @@
                     {{ t('nav.language') }}
                 </a>
 
-                <a href="{{ $localePrefix }}/services/consultations" class="bg-accent text-black px-6 py-2.5 rounded-full font-heading font-bold text-xs uppercase tracking-widest hover:bg-accent/90 transition-all">
+                <a href="{{ $localePrefix }}/contact" class="bg-accent text-black px-6 py-2.5 rounded-full font-heading font-bold text-xs uppercase tracking-widest hover:bg-accent/90 transition-all">
                     {{ t('free_consult') }}
                 </a>
             </div>
@@ -75,7 +75,7 @@
             </div>
             <div class="pt-4 border-t border-white/5 space-y-3">
                 <a href="{{ $isEs ? '/' : '/es' }}" class="block bg-white/5 border border-white/10 px-4 py-3 rounded-full text-white/70 text-xs font-bold uppercase tracking-widest text-center">{{ t('nav.language') }}</a>
-                <a href="{{ $localePrefix }}/services/consultations" class="block bg-accent text-black px-4 py-3 rounded-full text-xs font-bold uppercase tracking-widest text-center font-heading">{{ t('free_consult') }}</a>
+                <a href="{{ $localePrefix }}/contact" class="block bg-accent text-black px-4 py-3 rounded-full text-xs font-bold uppercase tracking-widest text-center font-heading">{{ t('free_consult') }}</a>
             </div>
         </div>
     </div>

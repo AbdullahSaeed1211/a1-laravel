@@ -6,7 +6,7 @@
                 <h2 class="text-white text-5xl md:text-7xl font-black tracking-tighter uppercase mb-6 leading-none italic italic-fix">{{ t('the_a1_elite') }}</h2>
                 <p class="text-white/40 font-medium text-lg italic italic-fix">{{ t('doctorallevel_expertise_and_mastercertified_trainers_at_your') }}</p>
             </div>
-            <a href="{{ $p }}/services/consultations" class="bg-white/5 border border-white/10 px-8 py-4 rounded-full text-white font-black uppercase tracking-widest text-[10px] hover:bg-accent hover:text-black transition-all shrink-0">{{ t('book_now') }}</a>
+            <a href="{{ $p }}/contact" class="bg-white/5 border border-white/10 px-8 py-4 rounded-full text-white font-black uppercase tracking-widest text-[10px] hover:bg-accent hover:text-black transition-all shrink-0">{{ t('book_now') }}</a>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

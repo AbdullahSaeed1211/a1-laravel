@@ -5,7 +5,7 @@
             <h2 class="text-black font-heading text-4xl md:text-6xl uppercase tracking-tighter leading-none mb-6">
                 {{ t('home.cta.title') }}
             </h2>
-            <a href="{{ $p }}/services/consultations" class="inline-block bg-black text-white px-8 md:px-12 py-4 md:py-6 rounded-full font-heading text-xl md:text-2xl uppercase tracking-widest hover:scale-105 transition-transform">
+            <a href="{{ $p }}/contact" class="inline-block bg-black text-white px-8 md:px-12 py-4 md:py-6 rounded-full font-heading text-xl md:text-2xl uppercase tracking-widest hover:scale-105 transition-transform">
                 {{ t('home.cta.button') }}
             </a>
         </div>

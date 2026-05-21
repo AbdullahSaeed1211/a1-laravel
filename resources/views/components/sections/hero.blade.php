@@ -28,7 +28,7 @@
                     <p class="text-black/60 font-semibold max-w-xs text-xs md:text-sm leading-relaxed border-l-4 border-accent pl-4 md:pl-6">
                         {{ t('home.hero.subtitle') }}
                     </p>
-                    <a href="{{ $p }}/services/consultations" class="btn-accent w-full md:w-auto px-6 md:px-10 py-3 md:py-4 rounded-full shadow-2xl flex items-center justify-center gap-3 group">
+                    <a href="{{ $p }}/contact" class="btn-accent w-full md:w-auto px-6 md:px-10 py-3 md:py-4 rounded-full shadow-2xl flex items-center justify-center gap-3 group">
                         <span class="font-heading text-lg md:text-2xl tracking-wide uppercase">{{ t('home.hero.cta') }}</span>
                         <span class="bg-black text-accent w-7 h-7 md:w-8 md:h-8 rounded-full flex items-center justify-center text-sm md:text-base group-hover:translate-x-2 transition-transform duration-300">&rarr;</span>
                     </a>
