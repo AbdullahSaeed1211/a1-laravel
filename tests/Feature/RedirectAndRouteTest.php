@@ -130,7 +130,7 @@ class RedirectAndRouteTest extends TestCase
 
     public function test_static_pages_return_200(): void
     {
-        foreach (['a1-black-member', 'refer-friends', 'reviews', 'contact', 'privacy', 'terms', 'find-class', 'calendar', 'renewals'] as $page) {
+        foreach (['a1-black-member', 'refer-friends', 'reviews', 'contact', 'privacy', 'terms', 'calendar', 'renewals'] as $page) {
             $this->get("/{$page}")->assertOk();
         }
     }

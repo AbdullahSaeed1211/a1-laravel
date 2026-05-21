@@ -55,14 +55,6 @@ class PageController extends Controller
         return view('public.pages.terms', compact('meta', 'lang'));
     }
 
-    public function findClass()
-    {
-        $lang = app()->getLocale();
-        $meta = SEOService::forPage('find-class', $lang);
-
-        return view('public.pages.find-class', compact('meta', 'lang'));
-    }
-
     public function calendar()
     {
         $lang = app()->getLocale();

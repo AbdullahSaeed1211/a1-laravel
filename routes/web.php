@@ -139,7 +139,6 @@ Route::middleware(['locale', 'cacheResponse'])->group(function () {
     Route::post('/api/contact', [ContactController::class, 'submit'])->name('contact.submit');
     Route::get('/privacy', [PageController::class, 'privacy'])->name('privacy');
     Route::get('/terms', [PageController::class, 'terms'])->name('terms');
-    Route::get('/find-class', [PageController::class, 'findClass'])->name('find-class');
     Route::get('/calendar', [PageController::class, 'calendar'])->name('calendar');
     Route::get('/renewals', [PageController::class, 'renewals'])->name('renewals');
 
@@ -165,7 +164,6 @@ Route::middleware(['locale', 'cacheResponse'])->group(function () {
         Route::post('/api/contact', [ContactController::class, 'submit'])->name('es.contact.submit');
         Route::get('/privacy', [PageController::class, 'privacy'])->name('es.privacy');
         Route::get('/terms', [PageController::class, 'terms'])->name('es.terms');
-        Route::get('/find-class', [PageController::class, 'findClass'])->name('es.find-class');
         Route::get('/calendar', [PageController::class, 'calendar'])->name('es.calendar');
         Route::get('/renewals', [PageController::class, 'renewals'])->name('es.renewals');
 

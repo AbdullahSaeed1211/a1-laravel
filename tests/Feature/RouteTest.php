@@ -117,11 +117,6 @@ class RouteTest extends TestCase
         $this->get('/terms')->assertOk();
     }
 
-    public function test_find_class(): void
-    {
-        $this->get('/find-class')->assertOk();
-    }
-
     public function test_calendar(): void
     {
         $this->get('/calendar')->assertOk();

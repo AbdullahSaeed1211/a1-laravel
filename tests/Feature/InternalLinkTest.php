@@ -127,14 +127,6 @@ class InternalLinkTest extends TestCase
         $this->get('/refer-friends')->assertSee('/contact');
     }
 
-    public function test_find_class_links_to_services(): void
-    {
-        $this->get('/find-class')
-            ->assertSee('/services/personal-training')
-            ->assertSee('/services/boxing')
-            ->assertSee('/services/physical-therapy');
-    }
-
     // ─── Navbar links ───
 
     public function test_navbar_links_to_all_major_sections(): void

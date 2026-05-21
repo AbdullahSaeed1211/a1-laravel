@@ -184,7 +184,7 @@ class DesignParityTest extends TestCase
 
     public function test_all_routes_return_200(): void
     {
-        $routes = ['/', '/about', '/services', '/trainers', '/blog', '/contact', '/reviews', '/a1-black-member', '/refer-friends', '/privacy', '/terms', '/find-class', '/calendar', '/renewals', '/es', '/es/about', '/es/services', '/es/trainers', '/es/blog', '/es/contact'];
+        $routes = ['/', '/about', '/services', '/trainers', '/blog', '/contact', '/reviews', '/a1-black-member', '/refer-friends', '/privacy', '/terms', '/calendar', '/renewals', '/es', '/es/about', '/es/services', '/es/trainers', '/es/blog', '/es/contact'];
         foreach ($routes as $route) {
             $response = $this->get($route);
             $response->assertOk();

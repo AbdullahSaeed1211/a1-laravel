@@ -18,7 +18,6 @@ class SeoPageRegistry
             ['key' => 'contact', 'label' => 'Contact', 'routeName' => 'contact'],
             ['key' => 'privacy', 'label' => 'Privacy Policy', 'routeName' => 'privacy'],
             ['key' => 'terms', 'label' => 'Terms of Service', 'routeName' => 'terms'],
-            ['key' => 'find-class', 'label' => 'Find a Class', 'routeName' => 'find-class'],
             ['key' => 'calendar', 'label' => 'Calendar', 'routeName' => 'calendar'],
             ['key' => 'renewals', 'label' => 'Renewals', 'routeName' => 'renewals'],
         ];

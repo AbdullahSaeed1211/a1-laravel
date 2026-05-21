@@ -54,14 +54,6 @@ class FaqMicrodataTest extends TestCase
         $this->assertStringContainsString('Frequently Asked Questions', $html);
     }
 
-    public function test_find_class_page_has_visible_faq(): void
-    {
-        $response = $this->get('/find-class');
-        $response->assertOk();
-        $html = $response->getContent();
-        $this->assertStringContainsString('FAQs', $html);
-    }
-
     public function test_calendar_page_has_visible_faq(): void
     {
         $response = $this->get('/calendar');
