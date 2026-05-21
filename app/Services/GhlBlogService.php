@@ -2,7 +2,6 @@
 
 namespace App\Services;
 
-use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Http;
 
 class GhlBlogService
@@ -20,61 +19,59 @@ class GhlBlogService
 
     public function all(): array
     {
-        return Cache::remember('ghl_blog_posts', 300, function () {
-            $response = Http::timeout(30)->get($this->rssUrl);
+        $response = Http::timeout(30)->get($this->rssUrl);
 
-            if (! $response->successful()) {
-                return [];
+        if (! $response->successful()) {
+            return [];
+        }
+
+        $xml = simplexml_load_string($response->body());
+        if (! $xml) {
+            return [];
+        }
+
+        $posts = [];
+        foreach ($xml->channel->item as $item) {
+            $namespaces = $item->getNamespaces(true);
+
+            $content = '';
+            if (isset($namespaces['content'])) {
+                $content = (string) $item->children($namespaces['content'])->encoded;
             }
 
-            $xml = simplexml_load_string($response->body());
-            if (! $xml) {
-                return [];
+            $image = '';
+            if (isset($namespaces['media'])) {
+                $image = (string) $item->children($namespaces['media'])->content;
             }
 
-            $posts = [];
-            foreach ($xml->channel->item as $item) {
-                $namespaces = $item->getNamespaces(true);
-
-                $content = '';
-                if (isset($namespaces['content'])) {
-                    $content = (string) $item->children($namespaces['content'])->encoded;
-                }
-
-                $image = '';
-                if (isset($namespaces['media'])) {
-                    $image = (string) $item->children($namespaces['media'])->content;
-                }
-
-                $link = (string) $item->link;
-                $slug = '';
-                if (preg_match('/\/post\/([^\/]+)$/', $link, $m)) {
-                    $slug = $m[1];
-                }
-
-                $pubDate = (string) $item->pubDate;
-                $createdAt = $pubDate ? date('Y-m-d', strtotime($pubDate)) : date('Y-m-d');
-
-                $posts[] = [
-                    'slug' => $slug,
-                    'title' => (string) $item->title,
-                    'title_es' => (string) $item->title,
-                    'content' => $content,
-                    'content_es' => $content,
-                    'excerpt' => strip_tags((string) $item->description),
-                    'excerpt_es' => strip_tags((string) $item->description),
-                    'coverImage' => $image,
-                    'category' => (string) $item->category,
-                    'category_es' => (string) $item->category,
-                    'author' => 'A1 Training Group',
-                    'createdAt' => $createdAt,
-                    'published' => true,
-                    'language' => 'en',
-                ];
+            $link = (string) $item->link;
+            $slug = '';
+            if (preg_match('/\/post\/([^\/]+)$/', $link, $m)) {
+                $slug = $m[1];
             }
 
-            return $posts;
-        });
+            $pubDate = (string) $item->pubDate;
+            $createdAt = $pubDate ? date('Y-m-d', strtotime($pubDate)) : date('Y-m-d');
+
+            $posts[] = [
+                'slug' => $slug,
+                'title' => (string) $item->title,
+                'title_es' => (string) $item->title,
+                'content' => $content,
+                'content_es' => $content,
+                'excerpt' => strip_tags((string) $item->description),
+                'excerpt_es' => strip_tags((string) $item->description),
+                'coverImage' => $image,
+                'category' => (string) $item->category,
+                'category_es' => (string) $item->category,
+                'author' => 'A1 Training Group',
+                'createdAt' => $createdAt,
+                'published' => true,
+                'language' => 'en',
+            ];
+        }
+
+        return $posts;
     }
 
     public function findBySlug(string $slug): ?array
