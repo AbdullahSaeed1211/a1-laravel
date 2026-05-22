@@ -18,7 +18,7 @@
                         {{ t('nav.services') }}
                     </a>
                     <div x-show="servicesOpen" x-cloak
-                         class="absolute top-full left-0 bg-asphaltBlack border border-white/10 rounded-2xl p-6 shadow-2xl min-w-[600px] grid grid-cols-2 gap-4"
+                         class="absolute top-full left-0 bg-black border border-white/10 rounded-2xl p-6 shadow-2xl min-w-[600px] grid grid-cols-2 gap-4"
                          @mouseenter="servicesOpen = true" @mouseleave="servicesOpen = false">
                         @php $svcs = load_content('services.json'); @endphp
                         @foreach($svcs ?? [] as $s)
@@ -65,7 +65,7 @@
          x-transition:leave-start="opacity-100 scale-100"
          x-transition:leave-end="opacity-0 scale-95"
          @click.self="mobileOpen = false"
-         class="lg:hidden fixed inset-0 z-[60] bg-asphaltBlack">
+         class="lg:hidden fixed inset-0 z-[60] bg-black">
         <div class="h-screen px-4 py-6 space-y-4 overflow-y-auto">
             <div class="flex items-center justify-between mb-6">
                 <a href="{{ $localePrefix ?: '/' }}" @click="mobileOpen = false">
