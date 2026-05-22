@@ -65,7 +65,7 @@
          x-transition:leave-start="opacity-100 translate-y-0"
          x-transition:leave-end="opacity-0 -translate-y-2"
          @click.self="mobileOpen = false"
-         class="lg:hidden bg-asphaltBlack/95 backdrop-blur-lg border-t border-white/5 fixed inset-0 top-16 z-50 overflow-y-auto">
+         class="lg:hidden bg-asphaltBlack/95 backdrop-blur-lg border-t border-white/5 fixed inset-0 top-16 z-[60] overflow-y-auto">
         <div class="px-4 py-6 space-y-4">
             <div class="space-y-2">
                 <button @click="mobileServicesOpen = !mobileServicesOpen"
