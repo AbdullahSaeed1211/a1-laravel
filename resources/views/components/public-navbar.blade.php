@@ -5,7 +5,7 @@
 <nav class="fixed top-0 left-0 right-0 z-50 bg-asphaltBlack/90 backdrop-blur-md border-b border-white/5 transition-all duration-300" x-data="{ mobileOpen: false, mobileServicesOpen: false, servicesOpen: false, scrolled: false }"
      @scroll.window="scrolled = window.scrollY > 50"
      @keydown.escape.window="mobileOpen = false">
-    <div class="max-w-7xl mx-auto px-4 md:px-6">
+    <div class="max-w-7xl mx-auto px-4 md:px-6" x-show="!mobileOpen">
         <div class="flex items-center justify-between h-16 md:h-20">
             <a href="{{ $localePrefix ?: '/' }}" class="flex items-center gap-2 shrink-0">
                 <img src="/images/logo.avif" alt="A1 Training" class="h-8 md:h-10 w-auto">
