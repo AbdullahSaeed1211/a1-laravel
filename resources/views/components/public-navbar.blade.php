@@ -58,15 +58,15 @@
 
     <div x-show="mobileOpen"
          x-cloak
-         x-transition:enter="transition ease-out duration-200"
-         x-transition:enter-start="opacity-0"
-         x-transition:enter-end="opacity-100"
-         x-transition:leave="transition ease-in duration-150"
-         x-transition:leave-start="opacity-100"
-         x-transition:leave-end="opacity-0"
+         x-transition:enter="transition ease-out duration-300"
+         x-transition:enter-start="opacity-0 scale-95"
+         x-transition:enter-end="opacity-100 scale-100"
+         x-transition:leave="transition ease-in duration-200"
+         x-transition:leave-start="opacity-100 scale-100"
+         x-transition:leave-end="opacity-0 scale-95"
          @click.self="mobileOpen = false"
-         class="lg:hidden bg-asphaltBlack fixed inset-0 z-[60] overflow-y-auto">
-        <div class="px-4 py-6 space-y-4 min-h-screen">
+         class="lg:hidden fixed inset-0 z-[60] bg-asphaltBlack overflow-y-auto">
+        <div class="min-h-screen px-4 py-6 space-y-4">
             <div class="flex items-center justify-between mb-6">
                 <a href="{{ $localePrefix ?: '/' }}" @click="mobileOpen = false">
                     <img src="/images/logo.avif" alt="A1 Training" class="h-8 w-auto">
