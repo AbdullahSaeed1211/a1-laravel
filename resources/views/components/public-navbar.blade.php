@@ -65,7 +65,7 @@
          x-transition:leave-start="opacity-100 scale-100"
          x-transition:leave-end="opacity-0 scale-95"
          @click.self="mobileOpen = false"
-         class="lg:hidden fixed inset-0 z-[60] bg-black">
+         class="lg:hidden fixed inset-0 z-[60] bg-[#000000]">
         <div class="h-screen px-4 py-6 space-y-4 overflow-y-auto">
             <div class="flex items-center justify-between mb-6">
                 <a href="{{ $localePrefix ?: '/' }}" @click="mobileOpen = false">
