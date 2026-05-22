@@ -59,14 +59,22 @@
     <div x-show="mobileOpen"
          x-cloak
          x-transition:enter="transition ease-out duration-200"
-         x-transition:enter-start="opacity-0 -translate-y-2"
-         x-transition:enter-end="opacity-100 translate-y-0"
+         x-transition:enter-start="opacity-0"
+         x-transition:enter-end="opacity-100"
          x-transition:leave="transition ease-in duration-150"
-         x-transition:leave-start="opacity-100 translate-y-0"
-         x-transition:leave-end="opacity-0 -translate-y-2"
+         x-transition:leave-start="opacity-100"
+         x-transition:leave-end="opacity-0"
          @click.self="mobileOpen = false"
-         class="lg:hidden bg-asphaltBlack/95 backdrop-blur-lg border-t border-white/5 fixed inset-0 top-16 z-[60] overflow-y-auto">
-        <div class="px-4 py-6 space-y-4">
+         class="lg:hidden bg-asphaltBlack fixed inset-0 z-[60] overflow-y-auto">
+        <div class="px-4 py-6 space-y-4 min-h-screen">
+            <div class="flex items-center justify-between mb-6">
+                <a href="{{ $localePrefix ?: '/' }}" @click="mobileOpen = false">
+                    <img src="/images/logo.avif" alt="A1 Training" class="h-8 w-auto">
+                </a>
+                <button @click="mobileOpen = false" class="text-white/70 hover:text-accent p-2">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+                </button>
+            </div>
             <div class="space-y-2">
                 <button @click="mobileServicesOpen = !mobileServicesOpen"
                         class="w-full flex items-center justify-between px-4 py-2 text-white/70 hover:text-accent text-sm font-bold uppercase tracking-widest transition-colors"
