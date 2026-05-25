@@ -164,4 +164,21 @@ Route::middleware(['locale', 'cacheResponse'])->group(function () {
 
 });
 
+// Wix/cloud platform artifacts — 410 Gone (permanently removed)
+Route::fallback(function (\Illuminate\Http\Request $request) {
+    $path = $request->path();
+
+    foreach (['_api', '_partials', '_functions', 'cdn-cgi', 'wp-', 'wix'] as $pattern) {
+        if (str_contains($path, $pattern)) {
+            abort(410);
+        }
+    }
+
+    if ($request->hasAny(['page_id', 'p', 'format'])) {
+        abort(410);
+    }
+
+    abort(404);
+});
+
 require __DIR__.'/auth.php';

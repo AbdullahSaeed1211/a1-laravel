@@ -20,7 +20,6 @@ class SitemapController extends Controller
         $sitemap = Sitemap::create();
 
         $this->addStaticPages($sitemap, $now);
-        $this->addWixLegacyPages($sitemap, $now);
         $this->addTrainers($sitemap, $now);
         $this->addServices($sitemap, $now);
         $this->addServiceSubPages($sitemap, $now);
@@ -53,28 +52,6 @@ class SitemapController extends Controller
                     ->setChangeFrequency($freq)
                     ->setPriority($priority));
             }
-        }
-    }
-
-    private function addWixLegacyPages(Sitemap $sitemap, $now): void
-    {
-        $wixPages = [
-            '/privacy-policy' => 0.7,
-            '/terms-and-conditions' => 0.7,
-            '/about-9' => 0.6,
-            '/testimonials' => 0.6,
-            '/what-sets-us-apart' => 0.5,
-            '/referral' => 0.5,
-            '/loyalty' => 0.5,
-            '/personal-training-packages' => 0.6,
-            '/boxing' => 0.6,
-        ];
-
-        foreach ($wixPages as $path => $priority) {
-            $sitemap->add(Url::create(url($path))
-                ->setLastModificationDate($now)
-                ->setChangeFrequency(Url::CHANGE_FREQUENCY_MONTHLY)
-                ->setPriority($priority));
         }
     }
 
@@ -229,11 +206,13 @@ class SitemapController extends Controller
             'User-agent: *',
             'Disallow: /api/',
             'Disallow: /admin',
+            'Disallow: /dashboard',
             'Disallow: /register',
             'Disallow: /login',
             'Disallow: /forgot-password',
             'Disallow: /reset-password/',
             'Disallow: /en/',
+            'Disallow: /_*',
             "Sitemap: {$baseUrl}/sitemap.xml",
         ];
 
