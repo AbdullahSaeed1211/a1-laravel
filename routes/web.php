@@ -13,33 +13,15 @@ use App\Livewire\Admin\Blog\Create;
 use App\Livewire\Admin\Blog\Edit;
 use App\Livewire\Admin\Blog\Index;
 // ─── Wix legacy pages (outside locale middleware) ───
-// These serve the same content as canonical pages but preserve the Wix URL
-use App\Services\SEOService;
 use Illuminate\Support\Facades\Route;
 
-$canonical = fn ($url) => ['canonical' => url($url)];
-
-Route::get('/privacy-policy', function () use ($canonical) {
-    return view('public.pages.privacy', ['meta' => array_merge(SEOService::forPage('privacy', app()->getLocale()), $canonical('privacy'))]);
-});
-Route::get('/terms-and-conditions', function () use ($canonical) {
-    return view('public.pages.terms', ['meta' => array_merge(SEOService::forPage('terms', app()->getLocale()), $canonical('terms'))]);
-});
-Route::get('/about-9', function () use ($canonical) {
-    return view('public.pages.about', ['meta' => array_merge(SEOService::forPage('about', app()->getLocale()), $canonical('about'))]);
-});
-Route::get('/testimonials', function () use ($canonical) {
-    return view('public.pages.reviews', ['meta' => array_merge(SEOService::forPage('reviews', app()->getLocale()), $canonical('reviews'))]);
-});
-Route::get('/what-sets-us-apart', function () use ($canonical) {
-    return view('public.pages.about', ['meta' => array_merge(SEOService::forPage('about', app()->getLocale()), $canonical('about'))]);
-});
-Route::get('/referral', function () use ($canonical) {
-    return view('public.pages.refer-friends', ['meta' => array_merge(SEOService::forPage('refer-friends', app()->getLocale()), $canonical('refer-friends'))]);
-});
-Route::get('/loyalty', function () use ($canonical) {
-    return view('public.pages.a1-black-member', ['meta' => array_merge(SEOService::forPage('a1-black-member', app()->getLocale()), $canonical('a1-black-member'))]);
-});
+Route::redirect('/privacy-policy', '/privacy', 301);
+Route::redirect('/terms-and-conditions', '/terms', 301);
+Route::redirect('/about-9', '/about', 301);
+Route::redirect('/testimonials', '/reviews', 301);
+Route::redirect('/what-sets-us-apart', '/about', 301);
+Route::redirect('/referral', '/refer-friends', 301);
+Route::redirect('/loyalty', '/a1-black-member', 301);
 Route::get('/personal-training-packages', fn () => app(Svc::class)->show('personal-training'));
 Route::get('/boxing', fn () => app(Svc::class)->show('boxing'));
 // Blog posts: keep as redirect since slugs differ between Wix and our blog
@@ -63,6 +45,8 @@ Route::redirect('/services-4', '/services', 301);
 Route::redirect('/blank-1', '/', 301);
 Route::redirect('/blank-2', '/', 301);
 Route::redirect('/privacy-policy-1', '/privacy', 301);
+Route::redirect('/about-us', '/about', 301);
+Route::redirect('/service-page/{slug}', '/services', 301);
 
 // Wix copy-of* duplicates (redirect to canonical)
 Route::redirect('/copy-of-home', '/', 301);
