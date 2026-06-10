@@ -1,0 +1,287 @@
+{
+  "consultations": [
+    {
+      "name": "Free consultation call",
+      "price": 0,
+      "location": "any",
+      "duration": "15min"
+    },
+    {
+      "name": "A1's Gym's Complementary Session",
+      "price": 0,
+      "location": "gym",
+      "duration": "60min"
+    },
+    {
+      "name": "A1's Physical Therapy Consult",
+      "price": 0,
+      "location": "gym",
+      "duration": "60min"
+    },
+    {
+      "name": "Home Gym - Physical Therapy Consult",
+      "price": 0,
+      "location": "home",
+      "duration": "60min"
+    }
+  ],
+  "physical-therapy": [
+    {
+      "name": "A1's Physical Therapy Consult",
+      "price": 250,
+      "location": "gym"
+    },
+    {
+      "name": "A1's - Physical Therapy Session",
+      "price": 235,
+      "location": "gym"
+    },
+    {
+      "name": "Home Gym - Physical Therapy Consult",
+      "price": 250,
+      "location": "home"
+    },
+    {
+      "name": "Home Gym - 1 Physical Therapy Session",
+      "price": 235,
+      "location": "home"
+    }
+  ],
+  "personal-training": [
+    {
+      "name": "Free Personal Training Session",
+      "price": 0,
+      "location": "home",
+      "perSession": 0
+    },
+    {
+      "name": "1 Pack - Home Gym Personal Training",
+      "price": 105,
+      "location": "home"
+    },
+    {
+      "name": "3 Pack - Home Gym Personal Training",
+      "price": 295,
+      "location": "home",
+      "perSession": 98.33
+    },
+    {
+      "name": "8 Pack - Home Gym Personal Training",
+      "price": 800,
+      "location": "home",
+      "perSession": 100
+    },
+    {
+      "name": "15 Pack - Home Gym Personal Training",
+      "price": 1395,
+      "location": "home",
+      "perSession": 93
+    },
+    {
+      "name": "20 Pack - Home Gym Personal Training",
+      "price": 1800,
+      "location": "home",
+      "perSession": 90
+    },
+    {
+      "name": "1 Pack - A1's Personal Training",
+      "price": 125,
+      "location": "gym"
+    },
+    {
+      "name": "3 Pack - A1's Personal Training",
+      "price": 360,
+      "location": "gym",
+      "perSession": 120
+    },
+    {
+      "name": "8 Pack - A1's Personal Training",
+      "price": 920,
+      "location": "gym",
+      "perSession": 115
+    },
+    {
+      "name": "15 Pack - A1's Personal Training",
+      "price": 1650,
+      "location": "gym",
+      "perSession": 110
+    },
+    {
+      "name": "20 Pack - A1's Personal Training",
+      "price": 2100,
+      "location": "gym",
+      "perSession": 105
+    }
+  ],
+  "partner-training": [
+    {
+      "name": "Free Partner Training Session",
+      "price": 0,
+      "location": "home",
+      "perSession": 0
+    },
+    {
+      "name": "A1's Gym's Complementary Session",
+      "price": 60,
+      "location": "gym"
+    },
+    {
+      "name": "1 Pack - Home Gym Partner Training",
+      "price": 140,
+      "location": "home"
+    },
+    {
+      "name": "3 Pack - Home Gym Partner Training",
+      "price": 390,
+      "location": "home",
+      "perSession": 130
+    },
+    {
+      "name": "8 Pack - Home Gym Partner Training",
+      "price": 1000,
+      "location": "home",
+      "perSession": 125
+    },
+    {
+      "name": "1 Pack - A1's Partner Training",
+      "price": 160,
+      "location": "gym"
+    },
+    {
+      "name": "3 Pack - A1's Partner Training",
+      "price": 465,
+      "location": "gym",
+      "perSession": 155
+    },
+    {
+      "name": "8 Pack - A1's Partner Training",
+      "price": 1200,
+      "location": "gym",
+      "perSession": 150
+    }
+  ],
+  "kettlebell": [
+    {
+      "name": "4 Class Pass",
+      "price": 120,
+      "location": "any"
+    },
+    {
+      "name": "Kettle Bell Class",
+      "price": 35,
+      "location": "any"
+    }
+  ],
+  "boxing": [
+    {
+      "name": "1 Pack - Home Gym Boxing",
+      "price": 120,
+      "location": "home"
+    },
+    {
+      "name": "3 Pack - Home Gym Boxing",
+      "price": 345,
+      "location": "home",
+      "perSession": 115
+    },
+    {
+      "name": "8 Pack - Home Gym Boxing",
+      "price": 840,
+      "location": "home",
+      "perSession": 105
+    },
+    {
+      "name": "1 Pack - A1's Boxing",
+      "price": 150,
+      "location": "gym"
+    },
+    {
+      "name": "3 Pack - A1's Boxing",
+      "price": 420,
+      "location": "gym",
+      "perSession": 140
+    },
+    {
+      "name": "8 Pack - A1's Boxing",
+      "price": 1040,
+      "location": "gym",
+      "perSession": 130
+    }
+  ],
+  "online-hybrid": [
+    {
+      "name": "1 Pack - Online Video Session",
+      "price": 100,
+      "location": "virtual"
+    },
+    {
+      "name": "4 Pack - Online Video Session",
+      "price": 285,
+      "location": "virtual",
+      "perSession": 71.25
+    },
+    {
+      "name": "8 Pack - Online Video Session",
+      "price": 730,
+      "location": "virtual",
+      "perSession": 91.25
+    }
+  ],
+  "massage-therapy": [
+    {
+      "name": "Sports Massage - Studio",
+      "price": 180,
+      "location": "gym",
+      "duration": "60min"
+    },
+    {
+      "name": "Sports Massage - In-Home",
+      "price": 220,
+      "location": "home",
+      "duration": "60min"
+    },
+    {
+      "name": "Deep Tissue & Medical Massage - Studio",
+      "price": 200,
+      "location": "gym",
+      "duration": "60min"
+    },
+    {
+      "name": "Deep Tissue & Medical Massage - In-Home",
+      "price": 240,
+      "location": "home",
+      "duration": "60min"
+    },
+    {
+      "name": "Executive Decompression Therapy - Studio",
+      "price": 250,
+      "location": "gym",
+      "duration": "75min"
+    },
+    {
+      "name": "Executive Decompression Therapy - In-Home",
+      "price": 300,
+      "location": "home",
+      "duration": "75min"
+    },
+    {
+      "name": "Lymphatic Drainage - Studio",
+      "price": 200,
+      "location": "gym",
+      "duration": "60min"
+    },
+    {
+      "name": "Lymphatic Drainage - In-Home",
+      "price": 240,
+      "location": "home",
+      "duration": "60min"
+    }
+  ],
+  "registered-dietitians": [
+    {
+      "name": "Registered Dietitian Consultation",
+      "price": 150,
+      "location": "virtual"
+    }
+  ]
+}

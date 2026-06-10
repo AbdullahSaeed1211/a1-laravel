@@ -1,0 +1,62 @@
+{
+  "about": [
+    {"q": "How long has A1 Training Group been in business?", "qEs": "¿Cuánto tiempo lleva A1 Training Group en el negocio?", "a": "Founded in 2012, we've been serving Manhattan and the Hamptons for over a decade.", "aEs": "Fundado en 2012, hemos estado sirviendo a Manhattan y los Hamptons por más de una década."},
+    {"q": "What makes A1 different from other trainers?", "qEs": "¿Qué hace diferente a A1 de otros entrenadores?", "a": "We bring the gym to you — mobile training with full equipment. Plus, our team includes actual Doctors of Physical Therapy.", "aEs": "Llevamos el gimnasio a ti — entrenamiento móvil con equipo completo. Además, nuestro equipo incluye Doctores en Terapia Física."},
+    {"q": "Do I need gym equipment?", "qEs": "¿Necesito equipo de gimnasio?", "a": "Not at all. Our mobile trainers bring everything needed — kettlebells, bands, TRX, and more. We can also optimize your home or building gym.", "aEs": "Para nada. Nuestros entrenadores móviles traen todo lo necesario."},
+    {"q": "What's included in the free consultation?", "qEs": "¿Qué incluye la consulta gratuita?", "a": "A 15-minute call to discuss your goals, followed by a complimentary in-person session to experience our training style.", "aEs": "Una llamada de 15 minutos para discutir tus metas, seguida de una sesión presencial complementaria."}
+  ],
+  "reviews": [
+    {"q": "How do I leave a review?", "qEs": "¿Cómo puedo dejar una reseña?", "a": "You can leave a review on our Google page or Yelp. We appreciate all feedback!", "aEs": "Puedes dejar una reseña en nuestra página de Google o Yelp. ¡Apreciamos todo tipo de comentarios!"},
+    {"q": "Can I talk to past clients?", "qEs": "¿Puedo hablar con clientes anteriores?", "a": "We can connect you with a current client who can share their experience. Ask during your free consultation.", "aEs": "Podemos conectarte con un cliente actual que pueda compartir su experiencia."},
+    {"q": "Do you have more testimonials?", "qEs": "¿Tienen más testimonios?", "a": "Yes! Visit our Google Reviews page for hundreds more reviews from real clients.", "aEs": "¡Sí! Visita nuestra página de Google Reviews para cientos más de reseñas."}
+  ],
+  "contact": [
+    {"q": "Do I need to register in advance?", "qEs": "¿Necesito registrarme con anticipación?", "a": "Yes, we recommend booking your free consultation in advance to ensure availability with the right trainer.", "aEs": "Sí, recomendamos reservar tu consulta gratuita con anticipación."},
+    {"q": "Do you come to my home?", "qEs": "¿Vienen a mi casa?", "a": "Yes! Our mobile trainers bring everything needed. We serve Manhattan, Brooklyn, and the Hamptons.", "aEs": "¡Sí! Nuestros entrenadores móviles llevan todo el equipo necesario."},
+    {"q": "How much does it cost?", "qEs": "¿Cuánto cuesta?", "a": "Personal training starts at $105/session for in-home and $135/session at the gym. Free consultation available.", "aEs": "El entrenamiento personal comienza en $105/sesión a domicilio y $135/sesión en el gimnasio."}
+  ],
+  "trainers": [
+    {"q": "How are trainers selected?", "qEs": "¿Cómo se seleccionan los entrenadores?", "a": "Every A1 trainer is certified (CPT) and undergoes a rigorous vetting process. Our team includes doctoral-level physical therapists and master-certified specialists.", "aEs": "Cada entrenador de A1 está certificado y pasa por un riguroso proceso de selección."},
+    {"q": "Can I switch trainers?", "qEs": "¿Puedo cambiar de entrenador?", "a": "Yes. If your goals or preferences change, we'll match you with a trainer who specializes in your new focus area.", "aEs": "Sí. Si tus metas o preferencias cambian, te emparejaremos con un entrenador."},
+    {"q": "Do trainers specialize?", "qEs": "¿Los entrenadores se especializan?", "a": "Yes. Each trainer has unique specialties — from boxing and kettlebell to physical therapy and post-rehab training.", "aEs": "Sí. Cada entrenador tiene especialidades únicas."},
+    {"q": "Can I train with multiple trainers?", "qEs": "¿Puedo entrenar con varios entrenadores?", "a": "Absolutely. Many clients work with different specialists — a physical therapist for rehab and a boxing coach for cardio.", "aEs": "Absolutamente. Muchos clientes trabajan con diferentes especialistas."}
+  ],
+  "services": [
+    {"q": "How do I choose the right service?", "qEs": "¿Cómo elijo el servicio adecuado?", "a": "Book a free consultation and we'll assess your goals, fitness level, and preferences to recommend the perfect program.", "aEs": "Reserva una consulta gratuita y evaluaremos tus metas para recomendarte el programa perfecto."},
+    {"q": "Can I switch between services?", "qEs": "¿Puedo cambiar entre servicios?", "a": "Yes. Your program can evolve as your needs change. Many clients combine personal training with physical therapy or add boxing for variety.", "aEs": "Sí. Tu programa puede evolucionar a medida que cambian tus necesidades."},
+    {"q": "Do you offer packages?", "qEs": "¿Ofrecen paquetes?", "a": "Yes. We offer session packs ranging from 1 to 20 sessions, with discounts for larger packs.", "aEs": "Sí. Ofrecemos paquetes de sesiones que van de 1 a 20 sesiones."},
+    {"q": "What areas do you serve?", "qEs": "¿Qué áreas atienden?", "a": "We serve Manhattan, Brooklyn, and the Hamptons. Virtual training is available anywhere.", "aEs": "Atendemos Manhattan, Brooklyn y los Hamptons."},
+    {"q": "Can I train at home or only at the studio?", "qEs": "¿Puedo entrenar en casa o solo en el estudio?", "a": "Both options are available. In-home training brings the equipment to you. Studio sessions offer a private environment.", "aEs": "Ambas opciones están disponibles. El entrenamiento en casa lleva el equipo a ti."},
+    {"q": "Do I need equipment for in-home training?", "qEs": "¿Necesito equipo para el entrenamiento en casa?", "a": "No. Our trainers bring all necessary equipment. If you have a building gym, we can design a program around its equipment.", "aEs": "No. Nuestros entrenadores traen todo el equipo necesario."}
+  ],
+  "renewals": [
+    {"q": "When should I renew?", "qEs": "¿Cuándo debo renovar?", "a": "We recommend renewing when you have 2-3 sessions remaining to avoid any gap in your training consistency.", "aEs": "Recomendamos renovar cuando te queden 2-3 sesiones."},
+    {"q": "Can I switch trainers when I renew?", "qEs": "¿Puedo cambiar de entrenador al renovar?", "a": "Yes. You can request a different trainer or add additional services when renewing your package.", "aEs": "Sí. Puedes solicitar un entrenador diferente al renovar tu paquete."},
+    {"q": "What happens if I don't use all my sessions?", "qEs": "¿Qué pasa si no uso todas mis sesiones?", "a": "Session packages are valid for 12 months from the purchase date.", "aEs": "Los paquetes de sesiones son válidos por 12 meses a partir de la fecha de compra."},
+    {"q": "Do you offer auto-renewal?", "qEs": "¿Ofrecen renovación automática?", "a": "Yes. Monthly auto-renewal plans are available for clients who want hassle-free, continuous training.", "aEs": "Sí. Los planes de renovación automática están disponibles."}
+  ],
+  "a1-black-member": [
+    {"q": "Is A1 Black Member free?", "qEs": "¿A1 Black Member es gratuito?", "a": "Yes. Membership is completely free for all A1 Training Group clients. No fees, no strings attached.", "aEs": "Sí. La membresía es completamente gratuita."},
+    {"q": "How do I earn points?", "qEs": "¿Cómo gano puntos?", "a": "You earn 1 point for every $1 spent on paid services including personal training, physical therapy, massage, boxing, and kettlebell sessions.", "aEs": "Ganas 1 punto por cada $1 gastado en servicios pagos."},
+    {"q": "Do points expire?", "qEs": "¿Los puntos caducan?", "a": "Points never expire as long as your A1 Black Member account remains active.", "aEs": "Los puntos nunca caducan mientras tu cuenta esté activa."},
+    {"q": "Can I use points with other promotions?", "qEs": "¿Puedo usar puntos con otras promociones?", "a": "Points cannot be combined with other promotional offers or discounts.", "aEs": "Los puntos no se pueden combinar con otras ofertas promocionales."}
+  ],
+  "refer-friends": [
+    {"q": "How much does my friend save?", "qEs": "¿Cuánto ahorra mi amigo?", "a": "Your friend gets 15% off their first billing cycle.", "aEs": "Tu amigo obtiene un 15% de descuento en su primer ciclo."},
+    {"q": "Is there a limit to how many friends I can refer?", "qEs": "¿Hay un límite de amigos?", "a": "No limit. Each successful referral earns you $100 off your next bill.", "aEs": "Sin límite. Cada referido exitoso te da $100 de descuento."},
+    {"q": "When do I receive my $100 credit?", "qEs": "¿Cuándo recibo mi crédito?", "a": "The $100 credit is applied after your referred friend completes their first month of paid service.", "aEs": "El crédito se aplica después del primer mes de servicio pagado."},
+    {"q": "Can I refer someone who was already a client?", "qEs": "¿Puedo referir a alguien que ya era cliente?", "a": "The referral program is for new clients only.", "aEs": "El programa de referidos es solo para clientes nuevos."}
+  ],
+  "calendar": [
+    {"q": "What are your hours?", "qEs": "¿Cuáles son sus horarios?", "a": "We offer sessions from 6:00 AM to 9:00 PM, Monday through Saturday.", "aEs": "Ofrecemos sesiones de 6:00 AM a 9:00 PM, de lunes a sábado."},
+    {"q": "How long are sessions?", "qEs": "¿Cuánto duran las sesiones?", "a": "Standard sessions are 45-60 minutes. Longer sessions can be arranged.", "aEs": "Las sesiones estándar son de 45 a 60 minutos."},
+    {"q": "Can I schedule recurring sessions?", "qEs": "¿Puedo programar sesiones recurrentes?", "a": "Yes. Most clients schedule 2-3 sessions per week on the same days/times.", "aEs": "Sí. La mayoría programa 2-3 sesiones por semana."},
+    {"q": "Do you offer weekend classes?", "qEs": "¿Ofrecen clases los fines de semana?", "a": "Yes. Weekend sessions are available at select times. Contact us for weekend availability.", "aEs": "Sí. Las sesiones de fin de semana están disponibles en horarios seleccionados."}
+  ],
+  "find-class": [
+    {"q": "How do I book a class?", "qEs": "¿Cómo reservo una clase?", "a": "Book a free consultation first and we'll match you with the right program.", "aEs": "Reserva una consulta gratuita primero y te emparejaremos con el programa adecuado."},
+    {"q": "What should I wear?", "qEs": "¿Qué debo usar?", "a": "Wear comfortable workout clothes and athletic shoes. Our trainers bring all necessary equipment.", "aEs": "Usa ropa de entrenamiento cómoda. Nuestros entrenadores traen todo el equipo."},
+    {"q": "Can I try before committing?", "qEs": "¿Puedo probar antes de comprometerme?", "a": "Yes. Book a free consultation or complementary session with no obligation.", "aEs": "Sí. Reserva una consulta gratuita sin compromiso."},
+    {"q": "What if I need to cancel?", "qEs": "¿Qué pasa si necesito cancelar?", "a": "We require 24-hour notice for cancellations.", "aEs": "Requerimos un aviso de 24 horas para cancelaciones."}
+  ]
+}

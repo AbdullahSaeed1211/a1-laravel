@@ -1,0 +1,128 @@
+{
+  "home": {
+    "title": "A1 Training Group | NYC's #1 In-Home & Mobile Personal Training",
+    "description": "NYC's premier in-home and mobile personal training. Personal training, physical therapy, massage therapy, boxing, and kettlebell courses. Gym or home.",
+    "title_es": "A1 Training Group | Entrenamiento Personal Móvil #1 en NYC",
+    "description_es": "Entrenamiento personal móvil y a domicilio en NYC. Entrenamiento personal, terapia física, masaje, boxeo y cursos de kettlebell.",
+    "keywords": ["personal training NYC", "in-home personal trainer", "mobile personal training", "physical therapy NYC", "boxing training NYC", "massage therapy NYC", "kettlebell training"]
+  },
+  "services": {
+    "title": "Our Services | Personal Training, Physical Therapy & More | A1 Training Group",
+    "description": "Browse our full range of fitness and recovery services: personal training, physical therapy, massage therapy, boxing, kettlebell courses, and online training. Gym or in-home in NYC.",
+    "title_es": "Nuestros Servicios | Entrenamiento Personal, Terapia Física y Más | A1 Training Group",
+    "description_es": "Explora nuestros servicios de fitness y recuperación: entrenamiento personal, terapia física, masaje, boxeo, kettlebell y entrenamiento en línea. Gimnasio o domicilio en NYC.",
+    "keywords": ["personal training NYC", "physical therapy NYC", "massage therapy NYC", "boxing NYC", "kettlebell course NYC", "in-home training", "online personal training"]
+  },
+  "trainers": {
+    "title": "Our Certified Trainers & Physical Therapists | A1 Training Group",
+    "description": "Meet our elite team of certified personal trainers and Doctor of Physical Therapy. CPT-certified coaches specializing in strength, mobility, boxing, and rehabilitation in NYC.",
+    "title_es": "Nuestros Entrenadores Certificados y Terapeutas Físicos | A1 Training Group",
+    "description_es": "Conoce a nuestro equipo élite de entrenadores certificados y Doctor en Terapia Física. Coaches CPT especializados en fuerza, movilidad, boxeo y rehabilitación en NYC.",
+    "keywords": ["certified personal trainer NYC", "physical therapist NYC", "CPT trainer", "DPT physical therapy", "strength coach NYC", "mobility coach"]
+  },
+  "blog": {
+    "title": "Fitness Blog | Training Tips, Nutrition & Recovery | A1 Training Group",
+    "description": "Expert fitness advice from NYC's top trainers. Articles on strength training, nutrition, recovery, sleep, mindset, and kettlebell techniques.",
+    "title_es": "Blog de Fitness | Consejos de Entrenamiento, Nutrición y Recuperación | A1 Training Group",
+    "description_es": "Consejos de fitness de los mejores entrenadores de NYC. Artículos sobre entrenamiento de fuerza, nutrición, recuperación, sueño y técnicas de kettlebell.",
+    "keywords": ["fitness blog", "training tips", "nutrition advice", "recovery tips", "strength training guide", "kettlebell techniques"]
+  },
+  "about": {
+    "title": "About Us | NYC's Premier Boutique Fitness Concierge | A1 Training Group",
+    "description": "A1 Training Group is NYC's #1 in-home and mobile personal training provider. Founded in 2012, we bring elite fitness directly to your doorstep in Manhattan and the Hamptons.",
+    "title_es": "Sobre Nosotros | El Concierge de Fitness Boutique #1 en NYC | A1 Training Group",
+    "description_es": "A1 Training Group es el proveedor #1 de entrenamiento personal móvil y a domicilio en NYC. Fundado en 2012, llevamos fitness de élite directamente a tu puerta.",
+    "keywords": ["about A1 Training Group", "boutique fitness NYC", "in-home training company", "elite personal trainers NYC", "Manhattan fitness concierge"]
+  },
+  "contact": {
+    "title": "Contact Us | Book Your Free Consultation | A1 Training Group",
+    "description": "Get in touch with A1 Training Group. Book a free consultation for personal training, physical therapy, or massage therapy. Call (888) 872-2504 or email us.",
+    "title_es": "Contáctenos | Reserva Tu Consulta Gratuita | A1 Training Group",
+    "description_es": "Ponte en contacto con A1 Training Group. Reserva una consulta gratuita de entrenamiento personal, terapia física o masaje. Llama al (888) 872-2504.",
+    "keywords": ["contact A1 Training", "free fitness consultation NYC", "book personal training", "A1 Training phone number", "fitness consultation Manhattan"]
+  },
+  "reviews": {
+    "title": "Client Reviews & Testimonials | 5.0 Google Rating | A1 Training Group",
+    "description": "Read what our clients say about A1 Training Group. Real results from real people. 5.0 Google rating from NYC's top-rated in-home and mobile personal training service.",
+    "title_es": "Reseñas y Testimonios de Clientes | Calificación 5.0 en Google | A1 Training Group",
+    "description_es": "Lee lo que dicen nuestros clientes sobre A1 Training Group. Resultados reales de personas reales. Calificación 5.0 en Google del servicio de entrenamiento personal #1 en NYC.",
+    "keywords": ["A1 Training reviews", "personal training testimonials NYC", "5 star fitness reviews", "best personal trainer NYC reviews"]
+  },
+  "refer-friends": {
+    "title": "Refer Friends & Earn $100 Off | A1 Training Group Referral Program",
+    "description": "Refer friends to A1 Training Group and earn $100 off per referral. Your friend gets 15% off their first billing cycle. Start referring today.",
+    "title_es": "Refiere Amigos y Gana $100 de Descuento | Programa de Referidos A1 Training Group",
+    "description_es": "Refiere amigos a A1 Training Group y gana $100 de descuento por cada referido. Tu amigo obtiene 15% de descuento en su primer ciclo de facturación.",
+    "keywords": ["A1 Training referral", "fitness referral program NYC", "refer a friend fitness", "personal training discount"]
+  },
+  "a1-black-member": {
+    "title": "A1 Black Member Rewards Program | Earn Points & Get Discounts | A1 Training Group",
+    "description": "Join the A1 Black Member rewards program. Earn 1 point per $1 spent, redeem 5 points for 10% off all plans. Free to join for all clients.",
+    "title_es": "Programa de Recompensas A1 Black Member | Gana Puntos y Obtén Descuentos | A1 Training Group",
+    "description_es": "Únete al programa de recompensas A1 Black Member. Gana 1 punto por cada $1 gastado, canjea 5 puntos por 10% de descuento en todos los planes.",
+    "keywords": ["A1 Black Member", "fitness rewards program", "loyalty program personal training", "fitness points NYC"]
+  },
+  "privacy": {
+    "title": "Privacy Policy | A1 Training Group",
+    "description": "How A1 Training Group collects, uses, and protects your personal information. Your privacy matters to us.",
+    "title_es": "Política de Privacidad | A1 Training Group",
+    "description_es": "Cómo A1 Training Group recopila, usa y protege tu información personal. Tu privacidad nos importa.",
+    "keywords": []
+  },
+  "terms": {
+    "title": "Terms of Service | A1 Training Group",
+    "description": "Terms and conditions governing the use of A1 Training Group's website and personal training services.",
+    "title_es": "Términos de Servicio | A1 Training Group",
+    "description_es": "Términos y condiciones que rigen el uso del sitio web y servicios de entrenamiento personal de A1 Training Group.",
+    "keywords": []
+  },
+  "find-class": {
+    "title": "Find Your Class | Personal Training, Boxing & PT | A1 Training Group",
+    "description": "Find the perfect fitness class at A1 Training Group. Personal training, boxing, physical therapy, and more in NYC. Free consultation available.",
+    "title_es": "Encuentra tu Clase | Entrenamiento Personal, Boxeo y PT | A1 Training Group",
+    "description_es": "Encuentra la clase perfecta en A1 Training Group. Entrenamiento personal, boxeo, terapia física y más en NYC. Consulta gratuita disponible.",
+    "keywords": ["fitness classes NYC", "personal training NYC", "boxing NYC", "physical therapy NYC"]
+  },
+  "calendar": {
+    "title": "Class Schedule & Availability | A1 Training Group",
+    "description": "View A1 Training Group's flexible class schedule. Morning, afternoon, and evening sessions available in-studio, in-home, or online in NYC.",
+    "title_es": "Horario de Clases y Disponibilidad | A1 Training Group",
+    "description_es": "Consulta el horario flexible de A1 Training Group. Sesiones de mañana, tarde y noche disponibles en estudio, a domicilio o en línea en NYC.",
+    "keywords": ["training schedule NYC", "fitness class times", "personal training hours NYC"]
+  },
+  "renewals": {
+    "title": "Session Renewals & Membership Options | A1 Training Group",
+    "description": "Renew your A1 Training Group session package. Monthly auto-renew, session pack renewal, and service upgrades available for existing clients.",
+    "title_es": "Renovaciones de Sesiones y Membresías | A1 Training Group",
+    "description_es": "Renueva tu paquete de sesiones de A1 Training Group. Renovación automática mensual, paquetes de sesiones y actualizaciones de servicio disponibles.",
+    "keywords": ["personal training renewal", "fitness membership NYC", "session pack renewal"]
+  },
+  "boxing": {
+    "title": "Private Boxing & Elite Personal Training NYC | A1 Training Group",
+    "description": "Experience NYC's #1 concierge fitness service. Bespoke boxing, kettlebell training, and physical therapy delivered to your luxury condo or private studio. From Tribeca to the Upper East Side, our elite coaches provide discrete, high-performance results for busy executives and professionals.",
+    "title_es": "Boxeo Privado y Entrenamiento Personal de Élite en NYC | A1 Training Group",
+    "description_es": "Experimenta el servicio de fitness concierge #1 de NYC. Boxeo a medida, entrenamiento con kettlebell y terapia física entregados en tu condominio de lujo o estudio privado.",
+    "keywords": ["private boxing NYC", "elite personal training Manhattan", "concierge fitness NYC", "boxing training Tribeca", "kettlebell training NYC", "in-home boxing Manhattan"]
+  },
+  "kettlebell": {
+    "title": "Elite Kettlebell Training NYC | Private In-Home Kettlebell Course",
+    "description": "Experience NYC's #1 private kettlebell course. Our elite mobile trainers bring Hardstyle (RKC/StrongFirst) coaching to your Manhattan home or luxury condo. Perfect for busy executives seeking strength, longevity, and postural correction.",
+    "title_es": "Entrenamiento de Kettlebell de Élite en NYC | Curso Privado de Kettlebell a Domicilio",
+    "description_es": "Experimenta el curso privado de kettlebell #1 de NYC. Nuestros entrenadores móviles de élite llevan coaching Hardstyle (RKC/StrongFirst) a tu hogar o condominio de lujo en Manhattan.",
+    "keywords": ["kettlebell training NYC", "Hardstyle kettlebell", "RKC certified instructor", "StrongFirst Manhattan", "private kettlebell coaching", "in-home kettlebell NYC"]
+  },
+  "massage-therapy": {
+    "title": "Best Massage Therapy New York | Elite Recovery & Sports Massage NYC",
+    "description": "Experience NYC's premier professional massage therapy services. From sports massage for athletes to executive decompression, A1 Training Group brings white-glove recovery to your luxury Manhattan home or our private studio.",
+    "title_es": "La Mejor Terapia de Masaje en Nueva York | Recuperación de Élite y Masaje Deportivo NYC",
+    "description_es": "Experimenta los servicios premier de terapia de masaje profesional en NYC. Desde masaje deportivo para atletas hasta descompresión ejecutiva. Servicio de recuperación de guante blanco.",
+    "keywords": ["massage therapy NYC", "sports massage New York", "deep tissue massage Manhattan", "executive massage NYC", "in-home massage Manhattan", "recovery massage NYC"]
+  },
+  "physical-therapy": {
+    "title": "Elite Physical Therapy & Recovery NYC | A1 Training Group Manhattan",
+    "description": "Experience NYC's premier concierge physical therapy and recovery. A1 Training Group provides bespoke rehabilitation, longevity coaching, and private strength training for busy executives in Tribeca, Chelsea, and the UES. White-glove service in-studio or at your luxury home.",
+    "title_es": "Terapia Física de Élite y Recuperación en NYC | A1 Training Group Manhattan",
+    "description_es": "Experimenta la terapia física concierge premier de NYC. A1 Training Group ofrece rehabilitación personalizada, coaching de longevidad y entrenamiento de fuerza privado para ejecutivos ocupados.",
+    "keywords": ["physical therapy NYC", "sports rehabilitation Manhattan", "longevity coaching NYC", "corrective exercise NYC", "post-surgical rehab NYC", "concierge physical therapy"]
+  }
+}
