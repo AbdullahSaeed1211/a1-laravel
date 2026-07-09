@@ -379,23 +379,43 @@
       "metaDescription": "Expert physical therapy in our private Manhattan studios. Injury rehabilitation, corrective exercise, and movement assessment in a clinical environment.",
       "headline": "Rehabilitation Meets Performance",
       "headlineEs": "Rehabilitación Conoce al Rendimiento",
-      "intro": "Our studio serves as a physical therapy hub where clinical expertise meets high-performance training. Our corrective exercise specialists use the studio's open floor plan and specialized tools to perform gait analysis and biomechanical assessments.",
+      "intro": "Our studio serves as a physical therapy hub where clinical expertise meets high-performance training. Our corrective exercise specialists use the studio's open floor plan and specialized tools to perform gait analysis and biomechanical assessments. Whether you're recovering from a sports injury, managing chronic pain, or optimizing your movement for peak performance, our studio environment provides the ideal setting for accelerated recovery and long-term physical health.",
       "introEs": "Nuestro estudio sirve como un centro de terapia física donde la experiencia clínica se encuentra con el entrenamiento de alto rendimiento.",
       "sections": [
         {
           "heading": "Clinical-Grade Assessment",
-          "content": "Our studios are equipped with specialized diagnostic tools essential for a comprehensive physical therapy assessment, from advanced body composition analyzers to gait analysis technology."
+          "content": "Our studios are equipped with specialized diagnostic tools essential for a comprehensive physical therapy assessment, from advanced body composition analyzers to gait analysis technology. Every session begins with a thorough evaluation to track your progress and adjust your treatment protocol based on objective data."
         },
         {
           "heading": "Seamless Rehab-to-Performance Transition",
-          "content": "We bridge the gap between clinical rehabilitation and elite performance. Your recovery doesn't stop at pain relief — we build you back stronger."
+          "content": "We bridge the gap between clinical rehabilitation and elite performance. Your recovery doesn't stop at pain relief — we build you back stronger with a phased approach that transitions from corrective exercise to full-strength training, ensuring you return to your sport or daily life more resilient than before."
+        },
+        {
+          "heading": "Manual Therapy & Soft Tissue Work",
+          "content": "Our physical therapists employ advanced manual therapy techniques including joint mobilizations, soft tissue release, and myofascial decompression to address restrictions, reduce pain, and restore optimal movement patterns in every session."
+        },
+        {
+          "heading": "Personalized Home Exercise Programming",
+          "content": "Recovery extends beyond the studio. Each client receives a tailored home exercise program with video demonstrations and progressive loading protocols, empowering you to take an active role in your rehabilitation between sessions."
         }
       ],
       "ctas": ["Book Your PT Studio Session", "Schedule a Biomechanical Assessment"],
       "faq": [
         {
           "q": "Do I need a referral?",
-          "a": "A formal referral is not required, though we value a collaborative approach with your physician."
+          "a": "A formal referral is not required, though we value a collaborative approach with your physician. We coordinate directly with your medical team to ensure continuity of care."
+        },
+        {
+          "q": "How long is a typical physical therapy session?",
+          "a": "Our standard physical therapy sessions are 60 minutes, allowing ample time for assessment, hands-on treatment, corrective exercise, and progress tracking."
+        },
+        {
+          "q": "What conditions do you treat?",
+          "a": "We treat a wide range of conditions including sports injuries, post-surgical rehabilitation, chronic back and neck pain, shoulder impingement, ACL recovery, runner's knee, sciatica, and postural dysfunction."
+        },
+        {
+          "q": "Will my insurance cover physical therapy?",
+          "a": "We accept eligible out-of-network insurance plans and provide detailed superbills for you to submit to your insurance provider. Contact us to verify your coverage."
         }
       ]
     },

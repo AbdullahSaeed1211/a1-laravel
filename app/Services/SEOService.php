@@ -135,7 +135,7 @@ class SEOService
             'alternateName' => 'A1 Training Group LLC',
             'url' => self::CANONICAL_DOMAIN,
             'telephone' => '(917) 732-6520',
-            'email' => 'info@a1traininggroupllc.com',
+            'email' => 'a1traininggroup@gmail.com',
             'logo' => self::buildUrl('/images/logo.avif'),
             'image' => $image,
             'description' => $description,

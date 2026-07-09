@@ -47,6 +47,7 @@ Route::redirect('/blank-2', '/', 301);
 Route::redirect('/privacy-policy-1', '/privacy', 301);
 Route::redirect('/about-us', '/about', 301);
 Route::redirect('/service-page/{slug}', '/services', 301);
+Route::redirect('/signed-up', '/', 301);
 
 // Wix copy-of* duplicates (redirect to canonical)
 Route::redirect('/copy-of-home', '/', 301);

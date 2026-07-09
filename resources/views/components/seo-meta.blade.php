@@ -27,6 +27,6 @@
 <meta name="twitter:card" content="{{ $meta['twitterCard'] ?? 'summary_large_image' }}">
 <meta name="twitter:title" content="{{ $meta['twitterTitle'] ?? $meta['title'] ?? '' }}">
 <meta name="twitter:description" content="{{ $meta['twitterDescription'] ?? $meta['description'] ?? '' }}">
-@if(!empty($meta['twitterImage'] ?? $meta['ogImage']))
-<meta name="twitter:image" content="{{ $meta['twitterImage'] ?? $meta['ogImage'] }}">
+@if(!empty($meta['twitterImage'] ?? $meta['ogImage'] ?? ''))
+<meta name="twitter:image" content="{{ $meta['twitterImage'] ?? $meta['ogImage'] ?? '' }}">
 @endif

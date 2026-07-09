@@ -14,13 +14,13 @@
     },
     {
       "name": "A1's Physical Therapy Consult",
-      "price": 0,
+      "price": 275,
       "location": "gym",
       "duration": "60min"
     },
     {
       "name": "Home Gym - Physical Therapy Consult",
-      "price": 0,
+      "price": 275,
       "location": "home",
       "duration": "60min"
     }
@@ -28,7 +28,7 @@
   "physical-therapy": [
     {
       "name": "A1's Physical Therapy Consult",
-      "price": 250,
+      "price": 275,
       "location": "gym"
     },
     {
@@ -38,7 +38,7 @@
     },
     {
       "name": "Home Gym - Physical Therapy Consult",
-      "price": 250,
+      "price": 275,
       "location": "home"
     },
     {

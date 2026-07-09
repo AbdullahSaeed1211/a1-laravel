@@ -37,7 +37,7 @@
         'boxing' => [['label' => 'Locations', 'value' => 'Gym + Home'], ['label' => 'Session Length', 'value' => '60 min'], ['label' => 'Starting At', 'value' => '$120']],
         'online-hybrid' => [['label' => 'Format', 'value' => 'Video + App'], ['label' => 'Flexibility', 'value' => '24/7'], ['label' => 'Starting At', 'value' => '$100']],
         'registered-dietitians' => [['label' => 'Format', 'value' => 'Virtual'], ['label' => 'Session Length', 'value' => '60 min'], ['label' => 'Starting At', 'value' => '$150']],
-        'consultations' => [['label' => 'Format', 'value' => 'Phone + In-Person'], ['label' => 'Duration', 'value' => '15-60 min'], ['label' => 'Cost', 'value' => 'FREE']],
+        'consultations' => [['label' => 'Format', 'value' => 'Phone + In-Person'], ['label' => 'Duration', 'value' => '15-60 min'], ['label' => 'Cost', 'value' => 'FREE / $275']],
     ]; @endphp
     @if(!empty($serviceStats[$service['slug']]))
     <div class="bg-accent">
