@@ -30,7 +30,7 @@ class ContactController extends Controller
             $phone = $validated['phone'] ?? 'N/A';
             $body = "Name: {$validated['name']}\nEmail: {$validated['email']}\nPhone: {$phone}\n\nMessage:\n{$validated['message']}";
             Mail::raw($body, function ($mail) use ($validated) {
-                $mail->to(env('MAIL_FROM_ADDRESS', 'info@a1traininggroupllc.com'))
+                $mail->to(env('MAIL_FROM_ADDRESS', 'a1traininggroup@gmail.com'))
                     ->subject('A1 Training Contact: '.$validated['name'])
                     ->replyTo($validated['email']);
             });

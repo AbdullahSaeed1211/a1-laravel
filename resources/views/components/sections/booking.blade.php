@@ -31,7 +31,7 @@
                 </div>
                 <h3 class="text-asphaltBlack font-heading text-2xl font-black uppercase mb-2">{{ t('email') }}</h3>
                 <p class="text-gray-500 text-sm">{{ t('send_us_a_message') }}</p>
-                <a href="mailto:info@a1traininggroupllc.com" class="text-accent text-xs font-bold uppercase tracking-widest mt-4 inline-block hover:underline">info@a1traininggroupllc.com</a>
+                <a href="mailto:a1traininggroup@gmail.com" class="text-accent text-xs font-bold uppercase tracking-widest mt-4 inline-block hover:underline">a1traininggroup@gmail.com</a>
             </div>
         </div>
 

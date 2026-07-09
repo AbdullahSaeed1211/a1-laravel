@@ -41,7 +41,7 @@
                     </div>
                     <h3 class="font-heading text-2xl font-black text-asphaltBlack uppercase mb-2">{{ t('email_us') }}</h3>
                     <p class="text-gray-500 mb-4 text-sm font-medium">{{ t('response_within_24_hours') }}</p>
-                    <a href="mailto:info@a1traininggroupllc.com" class="text-xl font-black text-accent hover:text-asphaltBlack transition-colors">info@a1traininggroupllc.com</a>
+                    <a href="mailto:a1traininggroup@gmail.com" class="text-xl font-black text-accent hover:text-asphaltBlack transition-colors">a1traininggroup@gmail.com</a>
                 </div>
             </div>
 
