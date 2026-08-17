@@ -5,9 +5,11 @@ namespace App\Http\Controllers\Public;
 use App\Http\Controllers\Controller;
 use App\Services\GhlBlogService;
 use App\Services\SEOService;
+use Spatie\ResponseCache\Attributes\Cache;
 
 class BlogController extends Controller
 {
+    #[Cache(lifetime: 60)]
     public function index(GhlBlogService $ghl)
     {
         $lang = app()->getLocale();
@@ -25,6 +27,7 @@ class BlogController extends Controller
         return view('public.blog.index', compact('meta', 'blogs', 'lang'));
     }
 
+    #[Cache(lifetime: 60)]
     public function show(string $slug, GhlBlogService $ghl)
     {
         $lang = app()->getLocale();
