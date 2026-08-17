@@ -34,7 +34,7 @@
             <div class="prose prose-invert prose-lg max-w-none text-white/70 leading-relaxed space-y-6">
                 @php $content = $isEs && !empty($blog['content_es']) ? $blog['content_es'] : ($blog['content'] ?? $blog['excerpt'] ?? ''); @endphp
                 @if(preg_match('/^<[a-z!]/', trim($content)))
-                    {!! $content !!}
+                    {!! clean_blog_html($content) !!}
                 @else
                 @foreach(explode("\n\n", $content) as $para)
                     @php $para = trim($para); @endphp
