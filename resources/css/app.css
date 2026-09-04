@@ -102,3 +102,41 @@
 .scroll-reveal.is-visible {
     animation: reveal 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
+
+/* Mindbody & Healcode Widgets */
+.healcode-pricing-option-text-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-accent);
+    color: #111111;
+    font-weight: 800;
+    font-size: 0.8125rem;
+    line-height: 1.25rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0.75rem 1.75rem;
+    border-radius: 9999px;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    box-shadow: 0 4px 14px rgba(201, 169, 110, 0.25);
+    cursor: pointer;
+}
+
+.healcode-pricing-option-text-link:hover {
+    background-color: #111111;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.mindbody-widget {
+    width: 100%;
+    min-height: 450px;
+}
+
+.mindbody-widget iframe {
+    width: 100% !important;
+    border: none !important;
+}
+

@@ -35,8 +35,34 @@
             </div>
         </div>
 
+        <!-- Mindbody Appointments & Trainer Schedule Widget -->
+        <div id="trainer-schedule" class="mt-16 bg-white p-6 md:p-10 rounded-[30px] border border-gray-200 shadow-xl overflow-hidden">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 pb-6 border-b border-gray-100 gap-4">
+                <div>
+                    <span class="text-accent font-black uppercase tracking-widest text-xs mb-1 block">
+                        {{ $isEs ? 'Horarios en Tiempo Real' : 'Trainer Schedules' }}
+                    </span>
+                    <h3 class="text-3xl md:text-5xl font-heading font-black uppercase tracking-tight text-asphaltBlack">
+                        {{ $isEs ? 'Agenda Tu Cita Directamente' : 'Trainer Schedules & Appointments' }}
+                    </h3>
+                    <p class="text-gray-500 mt-2 text-sm md:text-base max-w-2xl">
+                        {{ $isEs ? 'Consulta la disponibilidad de nuestros entrenadores y asegura tu cita al instante.' : 'View real-time trainer availability and book your training session directly.' }}
+                    </p>
+                </div>
+                <div class="shrink-0">
+                    <script src="https://widgets.mindbodyonline.com/javascripts/healcode.js" type="text/javascript"></script>
+                    <healcode-widget data-version="0.2" data-link-class="healcode-pricing-option-text-link" data-site-id="130594" data-mb-site-id="5749547" data-service-id="100038" data-bw-identity-site="true" data-type="pricing-link" data-inner-html="{{ $isEs ? 'Comprar Sesión' : 'Buy Now' }}" />
+                </div>
+            </div>
+
+            <!-- Mindbody Appointments widget begin -->
+            <div class="mindbody-widget" data-widget-type="Appointments" data-widget-id="3567336ef8f"></div>
+            <script async src="https://brandedweb.mindbodyonline.com/embed/widget.js"></script>
+            <!-- Mindbody Appointments widget end -->
+        </div>
+
         <div class="text-center mt-12">
-            <a href="{{ $p }}/contact" class="inline-block bg-accent text-black px-10 py-4 rounded-full font-heading font-bold text-lg uppercase tracking-widest hover:scale-105 transition-transform">
+            <a href="{{ $p }}/contact#schedule" class="inline-block bg-accent text-black px-10 py-4 rounded-full font-heading font-bold text-lg uppercase tracking-widest hover:scale-105 transition-transform">
                 {{ t('book_now') }}
             </a>
         </div>
