@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="p:domain_verify" content="b4dbf21423cd42a8c22a9456e84f059b"/>
     <link rel="icon" type="image/avif" href="/images/logo.avif">
     <link rel="apple-touch-icon" href="/images/logo.avif">
     <x-seo-meta :meta="$meta ?? []" />
