@@ -100,5 +100,32 @@
     "specialtiesEs": ["Fuerza Funcional", "Movilidad", "Prevención de Lesiones", "Fitness Postnatal"],
     "instagram": "https://www.instagram.com/a1traininggroup/",
     "order": 6
+  },
+  {
+    "id": "coach-christella",
+    "slug": "christella",
+    "name": "Coach Christella",
+    "title": "Certified Personal Trainer",
+    "titleEs": "Entrenadora Personal Certificada",
+    "certifications": ["FPTI Graduate", "NASM Candidate"],
+    "image": "/images/trainers/christella.webp",
+    "bio": "Specializing in strength training for women, helping build real, lasting strength and body confidence.",
+    "bioEs": "Especializada en entrenamiento de fuerza para mujeres, ayudando a construir fuerza real, duradera y confianza en el cuerpo.",
+    "longBio": "I'm Christella, an NYC-based trainer who's passionate about helping women build real, lasting strength.\n\nBefore fitness, I spent years in tech, where I led accessibility initiatives and cross-functional projects. That experience taught me how to break down complex problems and meet people where they are, skills I bring into every session I coach.\n\nI'm a graduate of the Focus Personal Training Institute, where I studied kinesiology, biomechanics, and the musculoskeletal system, and I'm currently working toward my NASM certification. My focus is on strength training for women, because I believe getting stronger changes how you move through the world, not just how you look.\n\nOutside of programming and coaching, I care most about building a gym community where women feel supported, seen, and excited to show up. If that sounds like the kind of training you're looking for, I'd love to work with you.",
+    "longBioEs": "Soy Christella, una entrenadora con sede en NYC a la que le apasiona ayudar a las mujeres a construir una fuerza real y duradera.\n\nAntes del fitness, pasé años en tecnología, donde lideré iniciativas de accesibilidad y proyectos interdisciplinarios. Esa experiencia me enseñó a descomponer problemas complejos y encontrar a las personas donde están, habilidades que aplico en cada sesión que entreno.\n\nSoy graduada del Focus Personal Training Institute, donde estudié kinesiología, biomecánica y el sistema musculoesquelético, y actualmente estoy obteniendo mi certificación NASM. Mi enfoque es el entrenamiento de fuerza para mujeres, porque creo que volverse más fuerte cambia cómo te mueves en el mundo, no solo cómo te ves.\n\nMás allá de la programación y el entrenamiento, lo que más me importa es construir una comunidad en el gimnasio donde las mujeres se sientan respaldadas, valoradas y entusiasmadas de asistir. Si eso se parece al tipo de entrenamiento que buscas, me encantaría trabajar contigo.",
+    "specialties": [
+      "Women's Strength Training",
+      "Biomechanics & Kinesiology",
+      "Functional Movement",
+      "Confidence Building"
+    ],
+    "specialtiesEs": [
+      "Entrenamiento de Fuerza para Mujeres",
+      "Biomecánica y Kinesiología",
+      "Movimiento Funcional",
+      "Construcción de Confianza"
+    ],
+    "instagram": "https://www.instagram.com/a1traininggroup/",
+    "order": 7
   }
 ]

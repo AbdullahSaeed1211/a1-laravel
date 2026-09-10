@@ -22,8 +22,8 @@
                 }
             @endphp
             <a href="{{ $p }}/trainers/{{ $trainer['slug'] }}"
-               class="{{ $idx === 0 ? 'lg:col-span-2 lg:row-span-2' : '' }} group relative rounded-[40px] overflow-hidden border border-white/5 hover:border-accent/40 transition-all duration-700 aspect-[4/5] lg:aspect-auto shadow-2xl block">
-                <img src="{{ $trainerImg }}" alt="{{ $trainer['name'] }}" class="w-full h-full object-cover group-hover:scale-105 transition-all duration-1000">
+               class="{{ $idx === 0 ? 'lg:col-span-2 lg:row-span-2 aspect-[4/5] lg:aspect-auto' : 'aspect-[4/5]' }} group relative rounded-[40px] overflow-hidden border border-white/5 hover:border-accent/40 transition-all duration-700 shadow-2xl block">
+                <img src="{{ $trainerImg }}" alt="{{ $trainer['name'] }}" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1000">
                 <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-90 group-hover:opacity-70 transition-opacity"></div>
 
                 <div class="absolute bottom-8 left-8 right-8 z-10">
