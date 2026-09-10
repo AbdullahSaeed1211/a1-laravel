@@ -5,6 +5,7 @@
     <x-sections.quote />
     <x-sections.services :services="$services" />
     <x-sections.trainers :trainers="$trainers" />
+    <x-sections.christella />
     <x-sections.brands />
     <x-sections.reviews />
     <x-sections.cta />
