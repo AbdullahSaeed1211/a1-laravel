@@ -32,7 +32,9 @@
     <main class="flex-1 pt-16 pb-24 lg:pb-0">{{ $slot }}</main>
     <x-public-footer />
     <x-mobile-sticky-bar />
-    <x-lead-popup />
+    @if(!request()->routeIs('calendar', 'es.calendar', 'contact', 'es.contact'))
+        <x-lead-popup />
+    @endif
     @livewireScripts
     @stack('scripts')
 </body>
