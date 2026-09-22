@@ -45,6 +45,32 @@
                 </div>
             </div>
 
+            <!-- Mindbody Appointments & Trainer Schedule Widget -->
+            <div id="schedule" class="mt-16 bg-white rounded-3xl shadow-xl border border-gray-100 p-6 md:p-10">
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 pb-6 border-b border-gray-100 gap-4">
+                    <div>
+                        <span class="text-accent font-black uppercase tracking-widest text-xs mb-1 block">
+                            {{ $isEs ? 'Horarios en Tiempo Real' : 'Trainer Schedules' }}
+                        </span>
+                        <h2 class="text-3xl md:text-5xl font-heading font-black uppercase tracking-tight text-asphaltBlack">
+                            {{ $isEs ? 'Citas y Horarios de Entrenadores' : 'Trainer Schedules & Appointments' }}
+                        </h2>
+                        <p class="text-gray-500 mt-2 text-sm md:text-base max-w-2xl">
+                            {{ $isEs ? 'Consulta la disponibilidad en vivo de nuestros entrenadores y reserva tu cita directamente.' : 'View real-time trainer availability and book your training session directly.' }}
+                        </p>
+                    </div>
+                    <div class="shrink-0">
+                        <script src="https://widgets.mindbodyonline.com/javascripts/healcode.js" type="text/javascript"></script>
+                        <healcode-widget data-version="0.2" data-link-class="healcode-pricing-option-text-link" data-site-id="130594" data-mb-site-id="5749547" data-service-id="100038" data-bw-identity-site="true" data-type="pricing-link" data-inner-html="{{ $isEs ? 'Comprar Sesión' : 'Buy Now' }}" />
+                    </div>
+                </div>
+
+                <!-- Mindbody Appointments widget begin -->
+                <div class="mindbody-widget" data-widget-type="Appointments" data-widget-id="3567336ef8f"></div>
+                <script async src="https://brandedweb.mindbodyonline.com/embed/widget.js"></script>
+                <!-- Mindbody Appointments widget end -->
+            </div>
+
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 mt-20">
                 <div class="space-y-8">
                     <div class="bg-white rounded-3xl overflow-hidden shadow-2xl border-4 border-white h-[400px] relative group">
