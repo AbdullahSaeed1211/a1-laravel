@@ -1,6 +1,14 @@
 <div
     x-data="{ show: false }"
     x-init="
+        try {
+            if (localStorage.getItem('a1_mindbody_customer')) return;
+            if (/mindbody/i.test(document.referrer || '')) {
+                localStorage.setItem('a1_mindbody_customer', '1');
+                return;
+            }
+        } catch (e) {}
+        if (document.querySelector('.mindbody-widget')) return;
         if (sessionStorage.getItem('a1_lead_popup_dismissed')) return;
         setTimeout(() => show = true, 45000);
         document.addEventListener('mouseleave', () => {
