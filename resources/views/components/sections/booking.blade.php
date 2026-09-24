@@ -36,7 +36,7 @@
         </div>
 
         <!-- Mindbody Appointments & Trainer Schedule Widget -->
-        <div id="trainer-schedule" class="mt-16 bg-white p-6 md:p-10 rounded-[30px] border border-gray-200 shadow-xl overflow-hidden">
+        <div id="trainer-schedule" class="mt-16 bg-white p-6 md:p-10 rounded-[30px] border border-gray-200 shadow-xl overflow-hidden scroll-mt-24">
             <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 pb-6 border-b border-gray-100 gap-4">
                 <div>
                     <span class="text-accent font-black uppercase tracking-widest text-xs mb-1 block">
@@ -56,7 +56,7 @@
             </div>
 
             <!-- Mindbody Appointments widget begin -->
-            <div class="mindbody-widget" data-widget-type="Appointments" data-widget-id="3567336ef8f"></div>
+            <div class="mindbody-widget" data-widget-type="Appointments" data-widget-id="3568434ef8f"></div>
             <script async src="https://brandedweb.mindbodyonline.com/embed/widget.js"></script>
             <!-- Mindbody Appointments widget end -->
         </div>

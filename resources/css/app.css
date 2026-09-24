@@ -7,6 +7,10 @@
     --color-asphaltBlack: #111111;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .accent-text-gradient {
     background: linear-gradient(135deg, var(--color-accent), #d4b87a);
     -webkit-background-clip: text;

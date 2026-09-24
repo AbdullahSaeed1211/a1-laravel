@@ -53,7 +53,7 @@
                 </div>
 
                 <!-- Mindbody Appointments widget begin -->
-                <div class="mindbody-widget" data-widget-type="Appointments" data-widget-id="3567336ef8f"></div>
+                <div class="mindbody-widget" data-widget-type="Appointments" data-widget-id="3568434ef8f"></div>
                 <script async src="https://brandedweb.mindbodyonline.com/embed/widget.js"></script>
                 <!-- Mindbody Appointments widget end -->
             </div>
