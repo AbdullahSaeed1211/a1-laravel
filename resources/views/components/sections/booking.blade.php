@@ -23,7 +23,8 @@
                 </div>
                 <h3 class="text-asphaltBlack font-heading text-2xl font-black uppercase mb-2">{{ t('visit') }}</h3>
                 <p class="text-gray-500 text-sm">{{ t('meet_us_at_the_studio') }}</p>
-                <p class="text-gray-400 text-xs mt-4">Manhattan, NYC</p>
+                <p class="text-gray-400 text-xs mt-4">598 Broadway, New York, NY 10012</p>
+                <p class="text-gray-400 text-xs mt-1">Manhattan, Brooklyn & The Hamptons</p>
             </div>
             <div class="bg-white border border-gray-200 p-8 md:p-12 rounded-[30px] text-center shadow-sm group hover:-translate-y-2 hover:border-accent/40 hover:shadow-lg transition-all duration-500">
                 <div class="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">

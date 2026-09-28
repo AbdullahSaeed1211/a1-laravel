@@ -9,7 +9,7 @@
             <p class="text-white/40 text-lg md:text-xl font-medium max-w-2xl leading-relaxed">{{ t('choose_the_service_option_that_best_fits_your_lifestyle') }}</p>
             <div class="flex items-center gap-4 mt-6">
                 <a href="{{ $p }}/trainers" class="text-white/30 hover:text-accent text-[10px] font-bold uppercase tracking-widest transition-colors border border-white/10 px-4 py-2 rounded-full">{{ $isEs ? 'Conoce a los Entrenadores' : 'Meet Our Trainers' }}</a>
-                <a href="{{ $p }}/contact" class="text-white/30 hover:text-accent text-[10px] font-bold uppercase tracking-widest transition-colors border border-white/10 px-4 py-2 rounded-full">{{ $isEs ? 'Contáctanos' : 'Book a Consultation' }}</a>
+                <a href="{{ $p }}/contact#schedule" class="text-white/30 hover:text-accent text-[10px] font-bold uppercase tracking-widest transition-colors border border-white/10 px-4 py-2 rounded-full">{{ t('book_now') }}</a>
             </div>
         </div>
     </section>

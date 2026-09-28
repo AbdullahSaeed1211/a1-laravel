@@ -1,8 +1,5 @@
 <title>{{ $meta['title'] ?? 'A1 Training Group' }}</title>
 <meta name="description" content="{{ $meta['description'] ?? '' }}">
-@if(!empty($meta['keywords']))
-<meta name="keywords" content="{{ is_array($meta['keywords']) ? implode(', ', $meta['keywords']) : $meta['keywords'] }}">
-@endif
 <meta name="robots" content="{{ $meta['robots'] ?? 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' }}">
 <link rel="canonical" href="{{ $meta['canonical'] ?? url()->current() }}">
 @if(!empty($meta['hreflang']))
@@ -30,3 +27,7 @@
 @if(!empty($meta['twitterImage'] ?? $meta['ogImage'] ?? ''))
 <meta name="twitter:image" content="{{ $meta['twitterImage'] ?? $meta['ogImage'] ?? '' }}">
 @endif
+@if(!empty($meta['jsonld']))
+<script type="application/ld+json">{!! $meta['jsonld'] !!}</script>
+@endif
+@stack('schema')

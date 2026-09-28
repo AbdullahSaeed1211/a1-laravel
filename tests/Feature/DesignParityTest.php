@@ -23,7 +23,7 @@ class DesignParityTest extends TestCase
     public function test_homepage_has_free_pass_cta(): void
     {
         $html = $this->get('/')->getContent();
-        $this->assertStringContainsString('Free Pass', $html);
+        $this->assertStringContainsString('Book Your Free Consultation', $html);
     }
 
     public function test_homepage_has_logo(): void
@@ -35,7 +35,7 @@ class DesignParityTest extends TestCase
     public function test_homepage_has_social_proof(): void
     {
         $html = $this->get('/')->getContent();
-        $this->assertStringContainsString('12k+', $html);
+        $this->assertStringContainsString('Serving NYC since 2012', $html);
     }
 
     public function test_homepage_has_view_pricing_hover(): void
@@ -59,7 +59,8 @@ class DesignParityTest extends TestCase
     public function test_homepage_has_marquee_brands(): void
     {
         $html = $this->get('/')->getContent();
-        $this->assertStringContainsString('animate-marquee', $html);
+        $this->assertStringNotContainsString('NYC Fit', $html);
+        $this->assertStringNotContainsString('Trusted by the best', $html);
     }
 
     public function test_homepage_has_scroll_reveal(): void
@@ -73,13 +74,13 @@ class DesignParityTest extends TestCase
     {
         $html = $this->get('/')->getContent();
         $this->assertStringContainsString('Ready to Transform', $html);
-        $this->assertStringContainsString('Book Free Consult', $html);
+        $this->assertStringContainsString('Book Your Free Consultation', $html);
     }
 
     public function test_homepage_has_mobile_sticky_cta(): void
     {
         $html = $this->get('/')->getContent();
-        $this->assertStringContainsString('Free Consult', $html);
+        $this->assertStringContainsString('Book Your Free Consultation', $html);
     }
 
     public function test_homepage_translations_work(): void
@@ -95,7 +96,7 @@ class DesignParityTest extends TestCase
         $response = $this->get('/es');
         $response->assertOk();
         $html = $response->getContent();
-        $this->assertStringContainsString('Pase Gratis', $html);
+        $this->assertStringContainsString('Reserva Tu Consulta Gratuita', $html);
         $this->assertStringContainsString('Servicios', $html);
     }
 
@@ -117,7 +118,7 @@ class DesignParityTest extends TestCase
     public function test_about_page_has_cta(): void
     {
         $html = $this->get('/about')->getContent();
-        $this->assertStringContainsString('Book Free Consult', $html);
+        $this->assertStringContainsString('Book Your Free Consultation', $html);
     }
 
     public function test_services_page_has_accent_gradient(): void

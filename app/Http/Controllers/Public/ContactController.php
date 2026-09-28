@@ -13,8 +13,9 @@ class ContactController extends Controller
     {
         $lang = app()->getLocale();
         $meta = SEOService::forPage('contact', $lang);
+        $trainers = load_content('trainers.json');
 
-        return view('public.contact', compact('meta', 'lang'));
+        return view('public.contact', compact('meta', 'lang', 'trainers'));
     }
 
     public function submit(Request $request)

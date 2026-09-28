@@ -27,7 +27,7 @@ class SEOService
 
         $currentPath = request()->path();
         $canonicalUrl = $isEs ? self::buildUrl("/{$currentPath}") : self::buildUrl("/{$currentPath}");
-        $ogImage = $seo['ogImage'] ?? self::buildUrl('/images/logo.avif');
+        $ogImage = $seo['ogImage'] ?? self::buildUrl('/images/og/og-default.png');
 
         return [
             'title' => $title,
@@ -95,12 +95,12 @@ class SEOService
             'ogTitle' => 'A1 Training Group',
             'ogDescription' => $desc,
             'ogType' => 'website',
-            'ogImage' => self::buildUrl('/images/logo.avif'),
+            'ogImage' => self::buildUrl('/images/og/og-default.png'),
             'twitterCard' => 'summary_large_image',
             'twitterTitle' => 'A1 Training Group',
             'twitterDescription' => $desc,
             'hreflang' => self::getHreflang('/'),
-            'jsonld' => self::getJsonLd('home', $title, $desc, $canonical, self::buildUrl('/images/logo.avif'), $lang),
+            'jsonld' => self::getJsonLd('home', $title, $desc, $canonical, self::buildUrl('/images/og/og-default.png'), $lang),
         ];
     }
 
@@ -143,8 +143,10 @@ class SEOService
             'founders' => [['@type' => 'Person', 'name' => 'A1 Training Group']],
             'address' => [
                 '@type' => 'PostalAddress',
+                'streetAddress' => '598 Broadway',
                 'addressLocality' => 'New York',
                 'addressRegion' => 'NY',
+                'postalCode' => '10012',
                 'addressCountry' => 'US',
             ],
             'sameAs' => [
@@ -156,17 +158,36 @@ class SEOService
         // LocalBusiness schema
         $schemas[] = [
             '@context' => 'https://schema.org',
-            '@type' => 'LocalBusiness',
+            '@type' => 'ExerciseGym',
             '@id' => self::CANONICAL_DOMAIN.'/#localbusiness',
             'name' => 'A1 Training Group',
             'image' => $image,
             'url' => self::CANONICAL_DOMAIN,
             'telephone' => '(917) 732-6520',
+            'email' => 'a1traininggroup@gmail.com',
             'priceRange' => '$$$',
+            'address' => [
+                '@type' => 'PostalAddress',
+                'streetAddress' => '598 Broadway',
+                'addressLocality' => 'New York',
+                'addressRegion' => 'NY',
+                'postalCode' => '10012',
+                'addressCountry' => 'US',
+            ],
+            'geo' => [
+                '@type' => 'GeoCoordinates',
+                'latitude' => 40.7233,
+                'longitude' => -73.9967,
+            ],
             'openingHoursSpecification' => [
                 ['@type' => 'OpeningHoursSpecification', 'dayOfWeek' => ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'], 'opens' => '06:00', 'closes' => '21:00'],
             ],
-            'areaServed' => ['New York', 'Manhattan', 'Brooklyn', 'The Hamptons'],
+            'areaServed' => [
+                ['@type' => 'City', 'name' => 'New York'],
+                ['@type' => 'Place', 'name' => 'Manhattan'],
+                ['@type' => 'Place', 'name' => 'Brooklyn'],
+                ['@type' => 'Place', 'name' => 'The Hamptons'],
+            ],
             'hasOfferCatalog' => [
                 '@type' => 'OfferCatalog',
                 'name' => $isEs ? 'Servicios de A1 Training' : 'A1 Training Services',
@@ -213,6 +234,49 @@ class SEOService
             ],
         ];
 
+        // Service schema (primary offer)
+        $schemas[] = [
+            '@context' => 'https://schema.org',
+            '@type' => 'Service',
+            '@id' => $url.'/#service',
+            'name' => $title,
+            'description' => $description,
+            'provider' => ['@id' => self::CANONICAL_DOMAIN.'/#localbusiness'],
+            'areaServed' => ['Manhattan', 'Brooklyn', 'The Hamptons', 'New York'],
+            'telephone' => '(917) 732-6520',
+            'url' => $url,
+            'offers' => [
+                '@type' => 'Offer',
+                'name' => $isEs ? 'Reserva Tu Consulta Gratuita' : 'Book Your Free Consultation',
+                'price' => '0',
+                'priceCurrency' => 'USD',
+                'availability' => 'https://schema.org/InStock',
+            ],
+        ];
+
         return json_encode($schemas, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
     }
-}
+
+    public static function faqJsonLd(array $faqs, string $lang = 'en'): string
+    {
+        $isEs = $lang === 'es';
+        $entities = [];
+        foreach ($faqs as $faq) {
+            $q = $isEs ? ($faq['qEs'] ?? $faq['q'] ?? '') : ($faq['q'] ?? '');
+            $a = $isEs ? ($faq['aEs'] ?? $faq['a'] ?? '') : ($faq['a'] ?? '');
+            if ($q === '' || $a === '') {
+                continue;
+            }
+            $entities[] = [
+                '@type' => 'Question',
+                'name' => $q,
+                'acceptedAnswer' => ['@type' => 'Answer', 'text' => $a],
+            ];
+        }
+
+        return json_encode([
+            '@context' => 'https://schema.org',
+            '@type' => 'FAQPage',
+            'mainEntity' => $entities,
+        ], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+    }

@@ -27,7 +27,7 @@
                     <p class="text-[8px] md:text-[10px] font-bold uppercase tracking-widest opacity-40">{{ t('lives_transformed') }}</p>
                 </div>
                 <div>
-                    <h4 class="font-heading text-3xl md:text-4xl mb-1">NYC / HAMP</h4>
+                    <h4 class="font-heading text-2xl md:text-3xl mb-1 leading-tight">Manhattan, Brooklyn & The Hamptons</h4>
                     <p class="text-[8px] md:text-[10px] font-bold uppercase tracking-widest opacity-40">{{ t('service_area') }}</p>
                 </div>
             </div>

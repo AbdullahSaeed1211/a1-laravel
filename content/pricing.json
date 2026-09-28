@@ -1,7 +1,7 @@
 {
   "consultations": [
     {
-      "name": "Free consultation call",
+      "name": "Book Your Free Consultation",
       "price": 0,
       "location": "any",
       "duration": "15min"
@@ -49,7 +49,7 @@
   ],
   "personal-training": [
     {
-      "name": "Free Personal Training Session",
+      "name": "Book Your Free Consultation",
       "price": 0,
       "location": "home",
       "perSession": 0
@@ -115,7 +115,7 @@
   ],
   "partner-training": [
     {
-      "name": "Free Partner Training Session",
+      "name": "Book Your Free Consultation",
       "price": 0,
       "location": "home",
       "perSession": 0

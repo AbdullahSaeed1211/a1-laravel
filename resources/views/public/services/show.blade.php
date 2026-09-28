@@ -99,7 +99,7 @@
                     <p class="text-white/30 text-sm">{{ t('pricing_coming_soon') }}</p>
                     @endif
 
-                    <a href="{{ $p }}/contact" class="block w-full bg-accent text-black text-center py-4 rounded-xl font-heading font-black text-lg uppercase hover:bg-accent-light transition-all">{{ t('book_now') }}</a>
+                    <a href="{{ $p }}/contact#schedule" class="block w-full bg-accent text-black text-center py-4 rounded-xl font-heading font-black text-lg uppercase hover:bg-accent-light transition-all">{{ t('book_now') }}</a>
 
                     <div class="pt-2 border-t border-white/5 space-y-2">
                         <div class="flex items-center gap-2 text-white/30 text-xs font-bold uppercase tracking-widest">
@@ -127,7 +127,7 @@
         $related = array_slice(array_values($related), 0, 4);
         $faqs = [
             ['q' => 'How do I get started with '.($isEs && !empty($service['titleEs']) ? $service['titleEs'] : $service['title']).'?', 'qEs' => '¿Cómo empiezo con '.($isEs && !empty($service['titleEs']) ? $service['titleEs'] : $service['title']).'?', 'a' => 'Book a free consultation and we\'ll create a personalized plan based on your goals.', 'aEs' => 'Reserva una consulta gratuita y crearemos un plan personalizado basado en tus metas.'],
-            ['q' => 'How long are sessions?', 'qEs' => '¿Cuánto duran las sesiones?', 'a' => 'Standard sessions are 45-60 minutes. We recommend 2-3 sessions per week for optimal results.', 'aEs' => 'Las sesiones estándar son de 45 a 60 minutos. Recomendamos 2-3 sesiones por semana para resultados óptimos.'],
+            ['q' => 'How long are sessions?', 'qEs' => '¿Cuánto duran las sesiones?', 'a' => 'Standard sessions are 60 minutes. We recommend 2-3 sessions per week for optimal results.', 'aEs' => 'Las sesiones estándar son de 60 minutos. Recomendamos 2-3 sesiones por semana para resultados óptimos.'],
             ['q' => 'Can I train at home or at the studio?', 'qEs' => '¿Puedo entrenar en casa o en el estudio?', 'a' => 'Both options are available. Choose what works best for your lifestyle and goals.', 'aEs' => 'Ambas opciones están disponibles. Elige lo que funcione mejor para tu estilo de vida y metas.'],
         ];
     @endphp
@@ -166,4 +166,45 @@
     </section>
 
     <x-sections.cta />
+
+    @push('schema')
+    <script type="application/ld+json">{!! \App\Services\SEOService::faqJsonLd($faqs ?? [], app()->getLocale()) !!}</script>
+    @php
+        $serviceOffers = [];
+        foreach (($slugPricing ?? []) as $plan) {
+            if (($plan['price'] ?? 0) > 0) {
+                $serviceOffers[] = [
+                    '@type' => 'Offer',
+                    'name' => $plan['name'] ?? '',
+                    'price' => (string) ($plan['price'] ?? ''),
+                    'priceCurrency' => 'USD',
+                ];
+            }
+        }
+        $serviceSchema = [
+            '@context' => 'https://schema.org',
+            '@type' => 'Service',
+            'name' => $isEs && !empty($service['titleEs']) ? $service['titleEs'] : ($service['title'] ?? ''),
+            'description' => $isEs && !empty($service['descriptionEs']) ? $service['descriptionEs'] : ($service['description'] ?? ''),
+            'provider' => [
+                '@type' => 'ExerciseGym',
+                'name' => 'A1 Training Group',
+                'telephone' => '(917) 732-6520',
+                'address' => [
+                    '@type' => 'PostalAddress',
+                    'streetAddress' => '598 Broadway',
+                    'addressLocality' => 'New York',
+                    'addressRegion' => 'NY',
+                    'postalCode' => '10012',
+                    'addressCountry' => 'US',
+                ],
+            ],
+            'areaServed' => ['Manhattan', 'Brooklyn', 'The Hamptons'],
+        ];
+        if (!empty($serviceOffers)) {
+            $serviceSchema['offers'] = $serviceOffers;
+        }
+    @endphp
+    <script type="application/ld+json">{!! json_encode($serviceSchema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}</script>
+    @endpush
 </x-layouts.public>

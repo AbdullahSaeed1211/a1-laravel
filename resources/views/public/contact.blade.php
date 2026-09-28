@@ -32,7 +32,8 @@
                     </div>
                     <h3 class="font-heading text-2xl font-black text-asphaltBlack uppercase mb-2">{{ t('service_area') }}</h3>
                     <p class="text-gray-500 mb-4 text-sm font-medium">{{ t('inhome_service_in_manhattan_and_beyond') }}</p>
-                    <span class="text-lg font-bold text-gray-800">Manhattan, NYC</span>
+                    <span class="text-lg font-bold text-gray-800">Manhattan, Brooklyn & The Hamptons</span>
+                    <span class="text-sm text-gray-500 mt-1">598 Broadway, New York, NY 10012</span>
                 </div>
 
                 <div class="bg-white p-8 rounded-2xl shadow-xl border border-gray-100 flex flex-col items-center text-center hover:-translate-y-1 transition-transform duration-300">
@@ -42,6 +43,29 @@
                     <h3 class="font-heading text-2xl font-black text-asphaltBlack uppercase mb-2">{{ t('email_us') }}</h3>
                     <p class="text-gray-500 mb-4 text-sm font-medium">{{ t('response_within_24_hours') }}</p>
                     <a href="mailto:a1traininggroup@gmail.com" class="text-xl font-black text-accent hover:text-asphaltBlack transition-colors">a1traininggroup@gmail.com</a>
+                </div>
+            </div>
+
+            <!-- Trainers strip (temporary) — compact, smaller photos -->
+            @php $contactTrainers = array_values($trainers ?? load_content('trainers.json')); @endphp
+            <div class="mt-12 bg-gray-50 rounded-3xl border border-gray-100 p-6 md:p-8">
+                <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 mb-6">
+                    <div>
+                        <span class="text-accent font-black uppercase tracking-widest text-xs block">{{ $isEs ? 'Nuestro Equipo' : 'Meet Our Trainers' }}</span>
+                        <h2 class="text-2xl md:text-3xl font-heading font-black uppercase tracking-tight text-asphaltBlack">{{ $isEs ? 'Entrenadores Disponibles' : 'Available Trainers' }}</h2>
+                    </div>
+                    <a href="{{ $p }}/trainers" class="text-xs font-black uppercase tracking-widest text-accent hover:text-asphaltBlack">{{ $isEs ? 'Ver Todos' : 'View All' }} &rarr;</a>
+                </div>
+                <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-4">
+                    @foreach($contactTrainers as $trainer)
+                    <a href="{{ $p }}/trainers/{{ $trainer['slug'] }}" class="group bg-white rounded-2xl border border-gray-100 overflow-hidden hover:border-accent/50 hover:-translate-y-0.5 transition-all text-center p-3">
+                        <div class="w-16 h-16 md:w-20 md:h-20 mx-auto rounded-full overflow-hidden border-2 border-gray-100 group-hover:border-accent/50">
+                            <img src="{{ $trainer['image'] ?? '' }}" alt="{{ $trainer['name'] }}" class="w-full h-full object-cover object-top" loading="lazy">
+                        </div>
+                        <div class="mt-2 text-sm font-black text-asphaltBlack leading-tight">{{ $trainer['name'] }}</div>
+                        <div class="text-[10px] font-bold uppercase tracking-widest text-gray-400 truncate">{{ $isEs && !empty($trainer['titleEs']) ? $trainer['titleEs'] : ($trainer['title'] ?? '') }}</div>
+                    </a>
+                    @endforeach
                 </div>
             </div>
 
@@ -74,10 +98,12 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 mt-20">
                 <div class="space-y-8">
                     <div class="bg-white rounded-3xl overflow-hidden shadow-2xl border-4 border-white h-[400px] relative group">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.1678280628287!2d-73.9144349234857!3d40.701911971395804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25c0e0b0e0e0f%3A0x1d1d1d1d1d1d1d1d!2s322%20Grove%20St%2C%20Brooklyn%2C%20NY%2011237!5e0!3m2!1sen!2sus!4v1680000000000!5m2!1sen!2sus"
+                        <iframe src="https://www.google.com/maps?q=598+Broadway,+New+York,+NY+10012&output=embed"
                             width="100%" height="100%" style="border: 0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                            title="A1 Training Group — 598 Broadway, New York, NY 10012"
                             class="grayscale group-hover:grayscale-0 transition-all duration-700"></iframe>
                     </div>
+                    <p class="text-sm text-gray-500 font-medium">598 Broadway, New York, NY 10012 — {{ $isEs ? 'Manhattan, Brooklyn y The Hamptons' : 'Manhattan, Brooklyn & The Hamptons' }} · <a href="tel:+19177326520" class="text-accent font-bold">(917) 732-6520</a></p>
 
                     <div class="bg-gray-50 rounded-3xl p-8 border border-gray-100">
                         <div class="flex items-center gap-3 mb-6">
