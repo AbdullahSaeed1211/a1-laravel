@@ -280,3 +280,4 @@ class SEOService
             'mainEntity' => $entities,
         ], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
     }
+}
