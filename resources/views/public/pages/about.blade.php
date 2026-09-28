@@ -24,7 +24,7 @@
         <section class="max-w-5xl mx-auto px-4 -mt-10 relative z-20">
             <div class="grid grid-cols-3 gap-4">
                 @php $stats = [
-                    ['value' => '6', 'label' => t('expert_trainers')],
+                    ['value' => '7', 'label' => t('expert_trainers')],
                     ['value' => '5.0', 'label' => 'Google Rating'],
                     ['value' => '7', 'label' => t('services')],
                 ]; @endphp
