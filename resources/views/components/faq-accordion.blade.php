@@ -12,7 +12,7 @@
             @foreach($faqs as $i => $faq)
             <div class="{{ $itemClass ?? 'bg-white/5 border border-white/10 rounded-2xl overflow-hidden' }}" x-data="{ open: false }">
                 <button @click="open = !open" class="w-full flex items-center justify-between p-6 text-left">
-                    <span class="text-white font-bold text-sm pr-4">{{ $isEs && !empty($faq['qEs']) ? $faq['qEs'] : $faq['q'] }}</span>
+                    <span class="{{ $questionClass ?? 'text-white' }} font-bold text-sm pr-4">{{ $isEs && !empty($faq['qEs']) ? $faq['qEs'] : $faq['q'] }}</span>
                     <svg class="w-4 h-4 text-accent shrink-0" :class="open ? 'rotate-180' : ''" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
                 </button>
                 <div x-show="open" x-cloak class="px-6 pb-6">

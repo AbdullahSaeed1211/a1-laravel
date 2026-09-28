@@ -73,6 +73,6 @@
             </div>
         </section>
 
-        <x-faq-accordion :faqs="load_faq('about')" title="{{ $isEs ? 'Preguntas Frecuentes' : 'Frequently Asked Questions' }}" :sectionClass="'max-w-3xl mx-auto px-4 py-24'" :headingClass="'text-3xl md:text-4xl font-heading font-black uppercase mb-8 text-center text-asphaltBlack'" :itemClass="'bg-lightGray border border-gray-200 rounded-2xl overflow-hidden'" :contentClass="'text-gray-600 leading-relaxed'" />
+        <x-faq-accordion :faqs="load_faq('about')" title="{{ $isEs ? 'Preguntas Frecuentes' : 'Frequently Asked Questions' }}" :sectionClass="'max-w-3xl mx-auto px-4 py-24'" :headingClass="'text-3xl md:text-4xl font-heading font-black uppercase mb-8 text-center text-asphaltBlack'" :itemClass="'bg-lightGray border border-gray-200 rounded-2xl overflow-hidden'" :questionClass="'text-asphaltBlack'" :contentClass="'text-gray-600 leading-relaxed'" />
     </div>
 </x-layouts.public>

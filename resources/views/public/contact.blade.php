@@ -60,7 +60,7 @@
                     @foreach($contactTrainers as $trainer)
                     <a href="{{ $p }}/trainers/{{ $trainer['slug'] }}" class="group bg-white rounded-2xl border border-gray-100 overflow-hidden hover:border-accent/50 hover:-translate-y-0.5 transition-all text-center p-3">
                         <div class="w-16 h-16 md:w-20 md:h-20 mx-auto rounded-full overflow-hidden border-2 border-gray-100 group-hover:border-accent/50">
-                            <img src="{{ $trainer['image'] ?? '' }}" alt="{{ $trainer['name'] }}" class="w-full h-full object-cover object-top" loading="lazy">
+                            <img src="{{ $trainer['image'] ?? '' }}" alt="{{ $trainer['name'] }}" class="w-full h-full object-cover object-top grayscale" loading="lazy">
                         </div>
                         <div class="mt-2 text-sm font-black text-asphaltBlack leading-tight">{{ $trainer['name'] }}</div>
                         <div class="text-[10px] font-bold uppercase tracking-widest text-gray-400 truncate">{{ $isEs && !empty($trainer['titleEs']) ? $trainer['titleEs'] : ($trainer['title'] ?? '') }}</div>
@@ -111,7 +111,7 @@
                             <h3 class="font-heading text-2xl font-black uppercase text-asphaltBlack">{{ t('common_questions') }}</h3>
                         </div>
                         <div class="space-y-4" x-data="{ openFaq: null }">
-                            <x-faq-accordion :faqs="load_faq('contact')" :title="''" :sectionClass="''" :headingClass="'hidden'" :itemClass="'bg-white rounded-xl shadow-sm'" :contentClass="'text-gray-500 text-sm leading-relaxed'" />
+                            <x-faq-accordion :faqs="load_faq('contact')" :title="''" :sectionClass="''" :headingClass="'hidden'" :itemClass="'bg-white rounded-xl shadow-sm'" :questionClass="'text-asphaltBlack'" :contentClass="'text-gray-500 text-sm leading-relaxed'" />
                         </div>
                     </div>
                 </div>

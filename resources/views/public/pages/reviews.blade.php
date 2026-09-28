@@ -52,7 +52,7 @@
         </div>
 
         <div class="max-w-3xl mx-auto px-4 pb-16">
-            <x-faq-accordion :faqs="load_faq('reviews')" title="{{ $isEs ? 'Preguntas Frecuentes' : 'Frequently Asked Questions' }}" :headingClass="'text-3xl font-heading font-black uppercase mb-8 text-center text-asphaltBlack'" :itemClass="'bg-lightGray border border-gray-200 rounded-2xl overflow-hidden'" :contentClass="'text-gray-600 leading-relaxed'" />
+            <x-faq-accordion :faqs="load_faq('reviews')" title="{{ $isEs ? 'Preguntas Frecuentes' : 'Frequently Asked Questions' }}" :headingClass="'text-3xl font-heading font-black uppercase mb-8 text-center text-asphaltBlack'" :itemClass="'bg-lightGray border border-gray-200 rounded-2xl overflow-hidden'" :questionClass="'text-asphaltBlack'" :contentClass="'text-gray-600 leading-relaxed'" />
         </div>
     </div>
 </x-layouts.public>
