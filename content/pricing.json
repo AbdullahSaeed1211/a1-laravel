@@ -56,61 +56,73 @@
     },
     {
       "name": "1 Pack - Home Gym Personal Training",
-      "price": 105,
+      "price": 160,
       "location": "home"
     },
     {
       "name": "3 Pack - Home Gym Personal Training",
-      "price": 295,
+      "price": 465,
       "location": "home",
-      "perSession": 98.33
+      "perSession": 155
     },
     {
       "name": "8 Pack - Home Gym Personal Training",
-      "price": 800,
+      "price": 1200,
       "location": "home",
-      "perSession": 100
+      "perSession": 150
+    },
+    {
+      "name": "12 Pack - Home Gym Personal Training",
+      "price": 1740,
+      "location": "home",
+      "perSession": 145
     },
     {
       "name": "15 Pack - Home Gym Personal Training",
-      "price": 1395,
+      "price": 2100,
       "location": "home",
-      "perSession": 93
+      "perSession": 140
     },
     {
       "name": "20 Pack - Home Gym Personal Training",
-      "price": 1800,
+      "price": 2700,
       "location": "home",
-      "perSession": 90
+      "perSession": 135
     },
     {
       "name": "1 Pack - A1's Personal Training",
-      "price": 125,
+      "price": 185,
       "location": "gym"
     },
     {
       "name": "3 Pack - A1's Personal Training",
-      "price": 360,
+      "price": 540,
       "location": "gym",
-      "perSession": 120
+      "perSession": 180
     },
     {
       "name": "8 Pack - A1's Personal Training",
-      "price": 920,
+      "price": 1400,
       "location": "gym",
-      "perSession": 115
+      "perSession": 175
+    },
+    {
+      "name": "12 Pack - A1's Personal Training",
+      "price": 2040,
+      "location": "gym",
+      "perSession": 170
     },
     {
       "name": "15 Pack - A1's Personal Training",
-      "price": 1650,
+      "price": 2475,
       "location": "gym",
-      "perSession": 110
+      "perSession": 165
     },
     {
       "name": "20 Pack - A1's Personal Training",
-      "price": 2100,
+      "price": 3200,
       "location": "gym",
-      "perSession": 105
+      "perSession": 160
     }
   ],
   "partner-training": [
@@ -127,37 +139,97 @@
     },
     {
       "name": "1 Pack - Home Gym Partner Training",
-      "price": 140,
+      "price": 290,
       "location": "home"
     },
     {
       "name": "3 Pack - Home Gym Partner Training",
-      "price": 390,
+      "price": 860,
+      "location": "home",
+      "perSession": 286.67
+    },
+    {
+      "name": "4 Pack - Home Gym Partner Training",
+      "price": 1160,
+      "location": "home",
+      "perSession": 290
+    },
+    {
+      "name": "8 Pack - Home Gym Partner Training",
+      "price": 2240,
+      "location": "home",
+      "perSession": 280
+    },
+    {
+      "name": "12 Pack - Home Gym Partner Training",
+      "price": 3240,
+      "location": "home",
+      "perSession": 270
+    },
+    {
+      "name": "Residential Gym 4 Session Monthly Subscription",
+      "price": 600,
+      "location": "home",
+      "perSession": 150
+    },
+    {
+      "name": "Residential Gym 8 Sessions Monthly Subscription",
+      "price": 1040,
       "location": "home",
       "perSession": 130
     },
     {
-      "name": "8 Pack - Home Gym Partner Training",
-      "price": 1000,
+      "name": "Residential Gym 12 Sessions Monthly Subscription",
+      "price": 1500,
       "location": "home",
       "perSession": 125
     },
     {
       "name": "1 Pack - A1's Partner Training",
-      "price": 160,
+      "price": 310,
       "location": "gym"
     },
     {
       "name": "3 Pack - A1's Partner Training",
-      "price": 465,
+      "price": 915,
+      "location": "gym",
+      "perSession": 305
+    },
+    {
+      "name": "4 Pack - A1's Partner Training",
+      "price": 1220,
+      "location": "gym",
+      "perSession": 305
+    },
+    {
+      "name": "8 Pack - A1's Partner Training",
+      "price": 2400,
+      "location": "gym",
+      "perSession": 300
+    },
+    {
+      "name": "12 Pack - A1's Partner Training",
+      "price": 3540,
+      "location": "gym",
+      "perSession": 295
+    },
+    {
+      "name": "A1's Gym 4 Session Monthly Package",
+      "price": 620,
       "location": "gym",
       "perSession": 155
     },
     {
-      "name": "8 Pack - A1's Partner Training",
+      "name": "A1's Gym 8 Session Monthly Package",
       "price": 1200,
       "location": "gym",
       "perSession": 150
+    },
+    {
+      "name": "A1's Gym 12 Session Monthly Package",
+      "price": 1740,
+      "location": "gym",
+      "perSession": 145
     }
   ],
   "kettlebell": [

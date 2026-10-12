@@ -13,7 +13,7 @@
   "contact": [
     {"q": "Do I need to register in advance?", "qEs": "¿Necesito registrarme con anticipación?", "a": "Yes, we recommend booking your free consultation in advance to ensure availability with the right trainer.", "aEs": "Sí, recomendamos reservar tu consulta gratuita con anticipación."},
     {"q": "Do you come to my home?", "qEs": "¿Vienen a mi casa?", "a": "Yes! Our mobile trainers bring everything needed. We serve Manhattan, Brooklyn, and the Hamptons.", "aEs": "¡Sí! Nuestros entrenadores móviles llevan todo el equipo necesario."},
-    {"q": "How much does it cost?", "qEs": "¿Cuánto cuesta?", "a": "Personal training starts at $105/session for in-home and $125/session at the gym. Free consultation available.", "aEs": "El entrenamiento personal comienza en $105/sesión a domicilio y $125/sesión en el gimnasio."}
+    {"q": "How much does it cost?", "qEs": "¿Cuánto cuesta?", "a": "Personal training starts at $160/session for in-home and $185/session at the gym. Free consultation available.", "aEs": "El entrenamiento personal comienza en $160/sesión a domicilio y $185/sesión en el gimnasio."}
   ],
   "trainers": [
     {"q": "How are trainers selected?", "qEs": "¿Cómo se seleccionan los entrenadores?", "a": "Every A1 trainer is certified (CPT) and undergoes a rigorous vetting process. Our team includes doctoral-level physical therapists and master-certified specialists.", "aEs": "Cada entrenador de A1 está certificado y pasa por un riguroso proceso de selección."},

@@ -29,8 +29,8 @@
     </div>
 
     @php $serviceStats = [
-        'personal-training' => [['label' => 'Locations', 'value' => 'Gym + Home'], ['label' => 'Session Length', 'value' => '60 min'], ['label' => 'Starting At', 'value' => '$105']],
-        'partner-training' => [['label' => 'Per Person', 'value' => 'From $70'], ['label' => 'Session Length', 'value' => '60 min'], ['label' => 'Locations', 'value' => 'Gym + Home']],
+        'personal-training' => [['label' => 'Locations', 'value' => 'Gym + Home'], ['label' => 'Session Length', 'value' => '60 min'], ['label' => 'Starting At', 'value' => '$160']],
+        'partner-training' => [['label' => 'Per Person', 'value' => 'From $145'], ['label' => 'Session Length', 'value' => '60 min'], ['label' => 'Locations', 'value' => 'Gym + Home']],
         'physical-therapy' => [['label' => 'Credentials', 'value' => 'DPT Level'], ['label' => 'Session Length', 'value' => '60 min'], ['label' => 'Starting At', 'value' => '$235']],
         'massage-therapy' => [['label' => 'Modalities', 'value' => 'Sports + Deep'], ['label' => 'Session Length', 'value' => '60 min'], ['label' => 'Starting At', 'value' => '$180']],
         'kettlebell' => [['label' => 'Format', 'value' => 'Group Class'], ['label' => 'Session Length', 'value' => '45 min'], ['label' => 'Drop-in', 'value' => '$35']],
