@@ -1,20 +1,22 @@
 <div
     x-data="{ show: false }"
-    x-init="
+    x-init="(() => {
+        let skip = false;
         try {
-            if (localStorage.getItem('a1_mindbody_customer')) return;
-            if (/mindbody/i.test(document.referrer || '')) {
+            if (localStorage.getItem('a1_mindbody_customer')) skip = true;
+            else if (/mindbody/i.test(document.referrer || '')) {
                 localStorage.setItem('a1_mindbody_customer', '1');
-                return;
+                skip = true;
             }
         } catch (e) {}
+        if (skip) return;
         if (document.querySelector('.mindbody-widget')) return;
         if (sessionStorage.getItem('a1_lead_popup_dismissed')) return;
         setTimeout(() => show = true, 45000);
         document.addEventListener('mouseleave', () => {
             if (document.documentElement.scrollY > 100) show = true;
         }, { once: true });
-    "
+    })()"
     x-show="show"
     x-cloak
     @keydown.escape.window="show = false; sessionStorage.setItem('a1_lead_popup_dismissed', '1')"

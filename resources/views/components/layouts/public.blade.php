@@ -37,5 +37,25 @@
     @endif
     @livewireScripts
     @stack('scripts')
+    <script>
+    (function () {
+        if (window.__mbFallbackArmed) return;
+        window.__mbFallbackArmed = true;
+        var DIRECT = 'https://go.mindbodyonline.com/book/widgets/appointments/view/3568434ef8f/services';
+        var es = document.documentElement.lang === 'es';
+        setTimeout(function () {
+            document.querySelectorAll('.mindbody-widget').forEach(function (w) {
+                if (w.querySelector('iframe')) return;
+                var box = document.createElement('div');
+                box.style.cssText = 'text-align:center;margin-top:16px;padding:20px;border-radius:16px;background:#fff8ec;border:1px solid #e5c97a;color:#111;';
+                box.innerHTML = '<p style="font-weight:800;margin-bottom:12px;">' +
+                    (es ? 'No se pudo cargar el horario en vivo (a menudo lo causan bloqueadores de anuncios o ajustes de privacidad).' : 'The live schedule could not be loaded (often caused by ad-blockers or browser privacy settings).') +
+                    '</p><a href="' + DIRECT + '" target="_blank" rel="noopener" style="display:inline-block;background:#c9a96e;color:#111;font-weight:800;padding:12px 28px;border-radius:9999px;text-decoration:none;">' +
+                    (es ? 'Reservar directamente' : 'Book directly on Mindbody') + '</a>';
+                w.parentNode.insertBefore(box, w.nextSibling);
+            });
+        }, 12000);
+    })();
+    </script>
 </body>
 </html>
