@@ -58,8 +58,12 @@
 
             <!-- Mindbody Appointments widget begin -->
             <div class="mindbody-widget" data-widget-type="Appointments" data-widget-id="3568434ef8f"></div>
-            <script async src="https://brandedweb.mindbodyonline.com/embed/widget.js"></script>
+            <script async src="https://go.mindbodyonline.com/embed/widget.js"></script>
             <!-- Mindbody Appointments widget end -->
+            <p class="text-center text-xs text-gray-400 mt-4">
+                {{ $isEs ? '¿No ves el horario?' : 'Schedule not loading?' }}
+                <a href="https://go.mindbodyonline.com/book/widgets/appointments/view/3568434ef8f/services" target="_blank" rel="noopener" class="text-accent font-bold uppercase tracking-widest hover:underline">{{ $isEs ? 'Reserva directamente' : 'Book directly' }}</a>
+            </p>
         </div>
 
         <div class="text-center mt-12">
