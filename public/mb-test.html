@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mindbody Widget Isolation Test</title>
+    <style>
+        body { font-family: sans-serif; max-width: 900px; margin: 40px auto; padding: 0 16px; }
+        .mindbody-widget { width: 100%; min-height: 450px; border: 2px dashed #ccc; }
+    </style>
+</head>
+<body>
+    <h1>Mindbody widget isolation test</h1>
+    <p>If the schedule loads here but not on /calendar, the embed is fine and something on the site pages is blocking it. If it is blank here too, the issue is the widget/browser side.</p>
+
+    <!-- Mindbody Appointments widget begin -->
+    <div class="mindbody-widget" data-widget-type="Appointments" data-widget-id="3568434ef8f"></div>
+    <script async src="https://go.mindbodyonline.com/embed/widget.js"></script>
+    <!-- Mindbody Appointments widget end -->
+</body>
+</html>
